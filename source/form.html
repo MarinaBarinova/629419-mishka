@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
 </head>
+
 <body>
   <header class="page-header">
     <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Мишка">
@@ -24,77 +26,78 @@
         </li>
       </ul>
     </nav>
-  </header>
-  <main class="page-main">
-    <div class="feedback__title">
-      <h2>Вязание на заказ</h2>
+    <div class="page-header__block">
+      <h2 class="page-header__title">Вязание на заказ</h2>
     </div>
-    <form class="feedback__form" action="https://echo.htmlacademy.ru" method="POST">
+  </header>
+  <main class="page-main feedback">
+
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <p class="feedback__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
-      <fieldset class="feedback__field  feedback__field--type ">
-        <legend class="feedback__field__name">Тип</legend>
+      <fieldset class="form__field  form__field--type ">
+        <legend class="form__name">Тип</legend>
         <ul class="feedback__filter">
-          <li class="feedback__filter--item">
-              <input type="radio" name="radio" value="radiobutton" id="radio1">
+          <li class="feedback__filter feedback__filter--item">
+            <input type="radio" name="radio" value="radiobutton" id="radio1">
             <label class="feedback__label" for="radio1">Аксессуар для
               интерьера</label>
           </li>
-          <li class="feedback__filter--item">
+          <li class="feedback__filter feedback__filter--item">
             <input type="radio" name="radio" value="radiobutton" id="radio2">
             <label class="feedback__label" for="radio2">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__field  feedback__field--color">
-        <legend class="feedback__field__name">Цвет</legend>
+      <fieldset class="form__field  form__field--color">
+        <legend class="form__name">Цвет</legend>
         <ul class="feedback__filter">
-          <li class="feedback__filter--item">
+          <li class="feedback__filter feedback__filter--item">
             <input type="checkbox" name="checkbox" id="color1">
             <label class="feedback__filter" for="color1">Белый</label> </li>
-          <li class="feedback__filter--item">
+          <li class="feedback__filter feedback__filter--item">
             <input type="checkbox" name="checkbox" id="color2">
             <label class="feedback__filter" for="color2">Серый</label> </li>
-          <li class="feedback__filter--item"><input type="checkbox" name="checkbox" id="color3">
+          <li class="feedback__filter feedback__filter--item"><input type="checkbox" name="checkbox" id="color3">
             <label class="feedback__filter" for="color3">"Тиффани"</label> </li>
-          <li class="feedback__filter--item">
+          <li class="feedback__filter feedback__filter--item">
             <input type="checkbox" name="checkbox" id="color4">
             <label class="feedback__filter" for="color4">Черный</label> </li>
-          <li class="feedback__filter--item">
+          <li class="feedback__filter feedback__filter--item">
             <input type="checkbox" name="checkbox" id="color5">
             <label class="feedback__filter" for="color5">Розовый</label></li>
-          <li class="feedback__filter--item"><input type="checkbox" name="checkbox" id="color6">
+          <li class="feedback__filter feedback__filter--item"><input type="checkbox" name="checkbox" id="color6">
             <label class="feedback__filter" for="color6">Оранжевый</label> </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__field feedback__field--contacts">
-        <legend class="feedback__field__name">ФИО</legend>
+      <fieldset class="form__field form__field--contacts">
+        <legend class="form__name">ФИО</legend>
         <ul class="feedback__contacts">
-          <li class="feedback__contacts--item">
+          <li class="feedback__contacts feedback__contacts--item">
             <label class="contacts-label" for="name">Имя:</label>
             <input type="text" id="name" required pattern="\S+[A-Za-zА-Яа-яЁё] placeholder=" Введите ваше имя*">
           </li>
-          <li class="feedback__contacts--item">
+          <li class="feedback__contacts feedback__contacts--item">
             <label class="contacts-label" for="surname">Фамилия:</label>
             <input type="text" id="surname" required pattern="\S+[A-Za-zА-Яа-яЁё] placeholder=" Укажите фамилию*">
           </li>
-          <li class="feedback__contacts--item">
+          <li class="feedback__contacts feedback__contacts--item">
             <label class="contacts-label" for="patronymic">Отчество:</label>
             <input type="text" id="patronymic" placeholder="Отчество, если желаете">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="feedback__field feedback__field--tel">
-        <legend class="feedback__field__name">ТЕЛ</legend>
+      <fieldset class="form__field form__field--tel">
+        <legend class="form__name">ТЕЛ</legend>
         <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
       </fieldset>
-      <fieldset class="feedback__field feedback__field--email">
-        <legend class="feedback__field__name">E-MAIL</legend>
+      <fieldset class="form__field form-email">
+        <legend class="form__name">E-MAIL</legend>
         <input type="email" name="email" placeholder="Ваш e-mail">
       </fieldset>
-      <fieldset class="feedback__field feedback__field--else">
-        <legend class="feedback__field__name">ДОП</legend>
-        <textarea class="feedback-textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      <fieldset class="form__field form__field--else">
+        <legend class="form__name">ДОП</legend>
+        <textarea class="form__message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         <button class="btn feedback__btn" type="submit">
       </fieldset>
     </form>
@@ -106,11 +109,13 @@
         <li class="social-links"><a href="#"><img src="http://placehold.it/20x20"></a></li>
         <li class="social-links"><a href="#"><img src="http://placehold.it/20x20"></a></li>
       </ul>
-      <div>
-        <span>Разработано</span>
-        <img src="http://placehold.it/30x30">
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="#" class="copyright__link"></a><img src="http://placehold.it/30x30"></a>
       </div>
+    </div>
     </div>
   </footer>
 </body>
+
 </html>
