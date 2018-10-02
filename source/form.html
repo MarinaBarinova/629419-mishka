@@ -30,10 +30,10 @@
       <h2 class="page-header__title">Вязание на заказ</h2>
     </div>
   </header>
-  <main class="page-main feedback">
+  <main class=" feedback">
 
     <form class="form" action="https://echo.htmlacademy.ru" method="POST">
-      <p class="feedback__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+      <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="form__field  form__field--type ">
         <legend class="form__name">Тип</legend>
@@ -51,37 +51,37 @@
       </fieldset>
       <fieldset class="form__field  form__field--color">
         <legend class="form__name">Цвет</legend>
-        <ul class="feedback__filter">
-          <li class="feedback__filter feedback__filter--item">
+        <ul class="form__filter">
+          <li class="form__filter form__filter--item">
             <input type="checkbox" name="checkbox" id="color1">
-            <label class="feedback__filter" for="color1">Белый</label> </li>
-          <li class="feedback__filter feedback__filter--item">
+            <label class="form__filter" for="color1">Белый</label> </li>
+          <li class="form__filter form__filter--item">
             <input type="checkbox" name="checkbox" id="color2">
-            <label class="feedback__filter" for="color2">Серый</label> </li>
-          <li class="feedback__filter feedback__filter--item"><input type="checkbox" name="checkbox" id="color3">
-            <label class="feedback__filter" for="color3">"Тиффани"</label> </li>
-          <li class="feedback__filter feedback__filter--item">
+            <label class="form__filter" for="color2">Серый</label> </li>
+          <li class="form__filter form__filter--item"><input type="checkbox" name="checkbox" id="color3">
+            <label class="form__filter" for="color3">"Тиффани"</label> </li>
+          <li class="form__filter form__filter--item">
             <input type="checkbox" name="checkbox" id="color4">
-            <label class="feedback__filter" for="color4">Черный</label> </li>
-          <li class="feedback__filter feedback__filter--item">
+            <label class="form__filter" for="color4">Черный</label> </li>
+          <li class="form__filter form__filter--item">
             <input type="checkbox" name="checkbox" id="color5">
-            <label class="feedback__filter" for="color5">Розовый</label></li>
-          <li class="feedback__filter feedback__filter--item"><input type="checkbox" name="checkbox" id="color6">
-            <label class="feedback__filter" for="color6">Оранжевый</label> </li>
+            <label class="form__filter" for="color5">Розовый</label></li>
+          <li class="form__filter form__filter--item"><input type="checkbox" name="checkbox" id="color6">
+            <label class="form__filter" for="color6">Оранжевый</label> </li>
         </ul>
       </fieldset>
       <fieldset class="form__field form__field--contacts">
         <legend class="form__name">ФИО</legend>
-        <ul class="feedback__contacts">
-          <li class="feedback__contacts feedback__contacts--item">
+        <ul class="form__contacts">
+          <li class="form__contacts form__contacts--item">
             <label class="contacts-label" for="name">Имя:</label>
             <input type="text" id="name" required pattern="\S+[A-Za-zА-Яа-яЁё] placeholder=" Введите ваше имя*">
           </li>
-          <li class="feedback__contacts feedback__contacts--item">
+          <li class="form__contacts form__contacts--item">
             <label class="contacts-label" for="surname">Фамилия:</label>
             <input type="text" id="surname" required pattern="\S+[A-Za-zА-Яа-яЁё] placeholder=" Укажите фамилию*">
           </li>
-          <li class="feedback__contacts feedback__contacts--item">
+          <li class="form__contacts form__contacts--item">
             <label class="contacts-label" for="patronymic">Отчество:</label>
             <input type="text" id="patronymic" placeholder="Отчество, если желаете">
           </li>
@@ -98,22 +98,23 @@
       <fieldset class="form__field form__field--else">
         <legend class="form__name">ДОП</legend>
         <textarea class="form__message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        <button class="btn feedback__btn" type="submit">
+        <button class="btn form__btn" type="submit">
       </fieldset>
     </form>
   </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <ul class="social-list">
-        <li class="social-links"><a href="#"><img src="http://placehold.it/20x20"></a></li>
-        <li class="social-links"><a href="#"><img src="http://placehold.it/20x20"></a></li>
-        <li class="social-links"><a href="#"><img src="http://placehold.it/20x20"></a></li>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social">
+        <li class="social_item "><a class="social_link social_link--inst"href="#"><img src="http://placehold.it/20x20"></a></li>
+        <li class="social_item "><a class="social_link social_link--fb"href="#"><img src="http://placehold.it/20x20"></a></li>
+        <li class="social_item "><a class="social_link social_link--twt"href="#"><img src="http://placehold.it/20x20"></a></li>
       </ul>
-      <div class="footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="#" class="copyright__link"></a><img src="http://placehold.it/30x30"></a>
+      <div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a href="#" class="copyright__link"></a><img src="http://placehold.it/30x30"></a>
+        </div>
       </div>
-    </div>
     </div>
   </footer>
 </body>
