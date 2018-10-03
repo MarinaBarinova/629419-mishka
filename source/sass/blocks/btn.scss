@@ -10,14 +10,14 @@
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid $text-color;
-  &:hover{
-    background:$text-color;
+
+  &:hover {
+    background: $text-color;
     color: $background-main;
   }
-  &:active{
-    background:$text-color;
-    color: $active-color;
 
+  &:active {
+    background: $text-color;
+    color: $active-color;
   }
 }
-
