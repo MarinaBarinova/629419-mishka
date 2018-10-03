@@ -1,0 +1,87 @@
+.form {
+  padding: 30px;
+  box-sizing: border-box;
+
+}
+
+.form__text {
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+
+}
+
+.form__field {
+  border: none;
+
+}
+
+.form__name {
+  color: $second-color;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
+}
+
+.form__filter-list {
+  list-style: none;
+}
+
+input[type="radio"] {}
+
+.form__label {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form__contacts-label {
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+
+}
+
+input::placeholder {
+  color: #cecece;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+
+}
+
+.form__message {
+  height: 140px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid $text-color;
+  background-color: $background-main;
+
+  &::placeholder {
+    color: #cecece;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+
+  }
+
+}
+
+.form__etc {
+  margin-bottom: 35px;
+  color: $text-color;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+
+}

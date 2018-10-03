@@ -1,0 +1,22 @@
+.intro {
+  padding: 35px 30px 35px 30px;
+}
+
+.intro__title {
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+
+}
+.intro__list{
+  list-style: none;
+}
+
+.intro__item {
+  color: #000000;
+  font-weight: 700;
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 20px;
+}
