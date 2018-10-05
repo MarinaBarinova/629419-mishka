@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Мишка">
+    <a href="index.html"><img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка"></a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list site-list">
@@ -16,7 +17,7 @@
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="site-list__item ">
-          <a href="#">Наши работы</a>
+          <a href="#">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
           <a href="#">Поиск по сайту</a>
@@ -26,8 +27,8 @@
         </li>
       </ul>
     </nav>
-    <div class="page-header__block">
-      <h2 class="page-header__title">Вязание на заказ</h2>
+    <div class="page-header__block page-header__block--form">
+      <h2 class="page-header__title ">Вязание на заказ</h2>
     </div>
   </header>
   <main class=" feedback">
@@ -98,21 +99,22 @@
       <fieldset class="form__field form__field--else">
         <legend class="form__name">ДОП</legend>
         <textarea class="form__message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        <button class="btn form__btn" type="submit">
+        <p class="form__etc">*Поля обязательны для заполнения</p>
+        <button class="btn form__btn" type="submit">Отправить заказ</button>
       </fieldset>
     </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <ul class="page-footer__social">
-        <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="http://placehold.it/20x20"></a></li>
-        <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="http://placehold.it/20x20"></a></li>
-        <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="http://placehold.it/20x20"></a></li>
+        <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
+        <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
+        <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
       </ul>
       <div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a href="#" class="copyright__link"></a><img src="http://placehold.it/30x30"></a>
+          <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg"alt="logo_html-academy" width="30" height="35"></a>
         </div>
       </div>
     </div>

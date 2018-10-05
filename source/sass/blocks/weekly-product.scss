@@ -1,0 +1,46 @@
+.weekly-product {
+  padding: 35px 30px 35px 30px;
+  background: $background-main;
+}
+
+.weekly-product__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.weekly-product__title {
+  color: $second-color;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: $font-family;
+  text-transform: uppercase;
+}
+
+.weekly-product__description {
+  color: $text-color;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: $font-family;
+  line-height: 24px;
+}
+
+.weekly-product__table {
+  color: $text-color;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: $font-family;
+}
+
+.weekly-product::after {
+  margin-top: 30px;
+  content: "";
+  width: 100%;
+  display: block;
+  height: 6px;
+  background-image: url("/img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+  z-index: 2;
+}
