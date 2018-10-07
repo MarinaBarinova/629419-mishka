@@ -1,10 +1,15 @@
 .catalog {
-  margin: 30px;
+  @include container;
+}
+
+.catalog-item {
+  margin-top: 30px;
 }
 
 .catalog-item__description {
   border: 1px solid #ececec;
   background-color: $background-main;
+  padding-left: 28px;
 }
 
 .catalog-item__name {
@@ -19,4 +24,52 @@
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
+}
+
+.catalog-item__buy {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .page-header__block--catalog {
+    height: 214px;
+  }
+
+  .page-header__block--catalog::after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 24px;
+    background-image: url(/img/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 24px;
+    z-index: 2;
+  }
+
+  .catalog-item {
+    display: flex;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .catalog {
+    display: flex;
+  }
+
+  .catalog-item {
+    flex-direction: column;
+    width: 315px;
+    padding-right: 50px;
+  }
+
+  .catalog-item:last-child {
+    padding: 0;
+  }
 }

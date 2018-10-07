@@ -1,6 +1,11 @@
+.form-container {
+  @include container;
+}
+
 .form {
-  padding: 30px;
-  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 55px;
+
 }
 
 .form__text {
@@ -33,6 +38,11 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
+}
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__contacts-label {
@@ -73,4 +83,32 @@ input::placeholder {
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
+}
+
+.form__btn {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+.form__field-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form__contacts {
+
+  flex-direction: row;
+}
+
+.form__message {
+  width: 70%;
+}
+
+.form__etc {
+  order: 1;
+}
+
+.form__btn {
+  width: 50%;
+}
 }
