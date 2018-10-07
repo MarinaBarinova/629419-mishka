@@ -22,26 +22,21 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .intro__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 250px;
-
   }
 
   .intro__item {
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 235px;
   }
-
-
 }
 
 @media (min-width: $desktop-width) {
-
   .intro__wrapper {
     @include index-content-margins;
   }

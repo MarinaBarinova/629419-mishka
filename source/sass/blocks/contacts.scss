@@ -8,6 +8,7 @@
   font-size: 18px;
   line-height: 30px;
   position: relative;
+
   @include container;
 }
 
@@ -37,7 +38,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts__wrapper {
     display: flex;
     flex-direction: row;
@@ -50,29 +50,27 @@
   .contacts__address {
     display: flex;
     flex-direction: row;
-    width:50%;
+    width: 50%;
     justify-content: space-between;
   }
 
   .contacts__address > .contacts-attribute {
-    width:30%;
+    width: 30%;
   }
 
   .contacts__icon {
     position: absolute;
     top: 10px;
-    right: 0px;
-display: block;
+    right: 0;
+    display: block;
   }
 
   .contacts__write {
     width: 230px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .contacts {
     display: flex;
     flex-direction: column;
@@ -90,9 +88,9 @@ display: block;
 
   .contacts__map {
     position: absolute;
-    right: 0px;
-    top: 0px;
-    width:455px;
+    right: 0;
+    top: 0;
+    width: 455px;
     height: 525px;
   }
 

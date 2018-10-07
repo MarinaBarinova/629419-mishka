@@ -1,6 +1,6 @@
 .reviews__wrapper {
   @include container;
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -57,33 +57,33 @@
 }
 
 @media (min-width: $tablet-width) {
- .reviews {
-   background: url('/img/review@1x.jpg') no-repeat;
-   position: relative;
- }
+  .reviews {
+    background: url("/img/review@1x.jpg") no-repeat;
+    position: relative;
+  }
 
- .reviews__btn {
-  position: absolute;
-  top: 25px;
-  width: 175px;
-  right: 50px;
- }
+  .reviews__btn {
+    position: absolute;
+    top: 25px;
+    width: 175px;
+    right: 50px;
+  }
 
- .reviews__container-arrows {
-   position: absolute;
-   top: 250px;
-   right: 50px;
- }
+  .reviews__container-arrows {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-
-
   .reviews__title {
     @include index-content-margins;
   }
+
   .reviews__items {
     width: 768px;
+
     @include index-content-margins;
   }
 }

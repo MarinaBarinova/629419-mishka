@@ -5,7 +5,6 @@
 .form {
   padding-top: 30px;
   padding-bottom: 55px;
-
 }
 
 .form__text {
@@ -90,25 +89,26 @@ input::placeholder {
 }
 
 @media (min-width: $tablet-width) {
-.form__field-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.form__contacts {
+  .form__field-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-  flex-direction: row;
-}
+  .form__contacts {
 
-.form__message {
-  width: 70%;
-}
+    flex-direction: row;
+  }
 
-.form__etc {
-  order: 1;
-}
+  .form__message {
+    width: 70%;
+  }
 
-.form__btn {
-  width: 50%;
-}
+  .form__etc {
+    order: 1;
+  }
+
+  .form__btn {
+    width: 50%;
+  }
 }

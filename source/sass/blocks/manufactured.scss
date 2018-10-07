@@ -1,6 +1,7 @@
 .manufactured {
   border: 1px solid #ececec;
   background-color: $background-main;
+
   @include container;
   margin-top: 30px;
   margin-bottom: 58px;
@@ -39,13 +40,11 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .manufactured {
     margin-top: 53px;
     margin-bottom: 63px;
     display: flex;
     flex-direction: column;
-
   }
 
   .manufactured__title-container {
@@ -62,7 +61,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .manufactured {
     align-items: flex-end;
     position: relative;
@@ -72,13 +70,14 @@
     flex-direction: column;
     width: 40%;
   }
+
   .manufactured__content {
     width: 40%;
   }
 
   .manufactured__video {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
   }
 }
