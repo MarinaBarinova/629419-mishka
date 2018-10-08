@@ -6,6 +6,46 @@
   <title>HTML Academy: Мишка</title>
   <link href="/css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <div class="page-header__container">
+    <a href="#" class="page-header__logo-container"><img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка"></a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><img src="/img/icon-menu-open.svg" alt="Меню"></button>
+      <ul class="main-nav__list site-list main-nav__list--closed">
+        <li class="site-list__item site-list__item--active">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item ">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Поиск по сайту</a>
+        </li>
+        <div class="page-header__container">
+          <a href="#" class="page-header__logo-container"><img class="page-header__logo-image" src="/img/logo-mobile.svg"
+              alt="Мишка"></a>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><img src="/img/icon-menu-open.svg" alt="Меню"></button>
+            <ul class="main-nav__list site-list main-nav__list--closed">
+              <li class="site-list__item site-list__item--active">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item ">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+          <li class="site-list__item">
+            <a href="#">Корзина</a>
+          </li>
+      </ul>
+    </nav>
+  </div>
 </head>
 
 <body>
@@ -20,6 +60,27 @@
             <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item ">
+            <div class="page-header__container">
+              <a href="#" class="page-header__logo-container"><img class="page-header__logo-image" src="/img/logo-mobile.svg"
+                  alt="Мишка"></a>
+              <nav class="main-nav">
+                <button class="main-nav__toggle" type="button"><img src="/img/icon-menu-open.svg" alt="Меню"></button>
+                <ul class="main-nav__list site-list main-nav__list--closed">
+                  <li class="site-list__item site-list__item--active">
+                    <a href="catalog.html">Каталог товаров</a>
+                  </li>
+                  <li class="site-list__item ">
+                    <a href="form.html">Вязание на заказ</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a href="#">Поиск по сайту</a>
+                  </li>
+                  <li class="site-list__item">
+                    <a href="#">Корзина</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
@@ -30,10 +91,10 @@
           </li>
         </ul>
       </nav>
-      </div>
-      <div class="page-header__block page-header__block--catalog">
-        <h2 class="page-header__title">Каталог товаров</h2>
-      </div>
+    </div>
+    <div class="page-header__block page-header__block--catalog">
+      <h2 class="page-header__title">Каталог товаров</h2>
+    </div>
   </header>
   <main class="main-catalog">
     <section class="catalog">
@@ -44,7 +105,6 @@
           <p class="catalog-item__features">Рост 30 см, вес 200 г</p>
           <div class="catalog-item__buy">
             <p class="catalog-item__price">1200 руб.</p>
-            <img class="catalog-item__basket" src="/img/icon-cart.svg" alt="basket">
           </div>
         </div>
       </article>
@@ -55,7 +115,6 @@
           <p class="catalog-item__features">Диаметр 15 см, высота 10 см</p>
           <div class="catalog-item__buy">
             <p class="catalog-item__price">690 руб.</p>
-            <img class="catalog-item__basket" src="/img/icon-cart.svg" alt="basket">
           </div>
         </div>
       </article>
@@ -66,14 +125,13 @@
           <p class="catalog-item__features">Диаметр 30 см, высота 30 см</p>
           <div class="catalog-item__buy">
             <p class="catalog-item__price">1500 руб.</p>
-            <img class="catalog-item__basket" src="/img/icon-cart.svg" alt="basket">
           </div>
         </div>
       </article>
     </section>
     <section class="manufactured">
       <div class="manufactured__title-container">
-        <img class="camera__img" src="/img/icon-video.svg" alt="camera">
+        <img class="manufactured__img-camera" src="/img/icon-video.svg" alt="camera">
         <h3 class="manufactured__title">Процесс производства</h3>
       </div>
       <div class="manufactured__video">
@@ -81,27 +139,27 @@
 
       </div>
       <div class="manufactured__content">
-          <p class="manufactured__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-            как появляются наши товары.</p>
-          <a href="#" class="manufactured_ordered btn">Сделать заказ</a>
-        </div>
+        <p class="manufactured__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.</p>
+        <a href="#" class="manufactured__ordered btn">Сделать заказ</a>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Лого">
-        <ul class="page-footer__social">
-          <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
-          <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
-          <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy" width="30"
-            height="35"></a>
-        </div>
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Лого">
+      <ul class="page-footer__social social">
+        <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
+        <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
+        <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy" width="30"
+          height="35"></a>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 
 </html>
