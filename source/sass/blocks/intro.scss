@@ -1,5 +1,5 @@
 .intro {
-  padding: 35px 30px 35px 30px;
+  @include container;
 }
 
 .intro__title {
@@ -19,4 +19,25 @@
   font-family: $font-family;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+  }
+
+  .intro__item {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    @include index-content-margins;
+  }
 }

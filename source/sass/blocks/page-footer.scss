@@ -2,9 +2,45 @@
   background-color: #f1f1f1;
 }
 
+.page-footer__wrapper {
+  @include container;
+}
+
 .copyright__text {
   font-family: $font-family;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  padding-right: 30px;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social__link--fb {
+  padding: 0 40px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
