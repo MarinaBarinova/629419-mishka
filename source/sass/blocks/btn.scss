@@ -1,15 +1,17 @@
 .btn {
-
   text-align: center;
   background: $background-main;
   font-weight: 600;
   font-family: $font-family;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 52px;
   color: $text-color;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid $text-color;
+  width: 260px;
+  height: 52px;
+
 
   &:hover {
     background: $text-color;
@@ -20,4 +22,8 @@
     background: $text-color;
     color: $active-color;
   }
+}
+
+@media (min-width: $tablet-width) {
+  width: 292px;
 }

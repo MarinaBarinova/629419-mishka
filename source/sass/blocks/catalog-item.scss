@@ -16,11 +16,18 @@
   line-height: 24px;
 }
 
+.catalog-item__features {
+  display: block;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 30px;
+}
+
 .catalog-item__price {
   font-family: $font-family;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 15px;
+  font-weight: 700;
   line-height: 30px;
+  margin-top: 27px;
 }
 
 .catalog-item__buy {
@@ -39,13 +46,17 @@
   background: url("/img/icon-cart.svg");
   position: absolute;
   right: 30px;
-  bottom: 30px;
+  bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-item {
     display: flex;
     margin-top: 54px;
+  }
+
+  .catalog-item__description {
+    width: 100%;
   }
 }
 
