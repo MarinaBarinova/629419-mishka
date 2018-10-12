@@ -16,28 +16,30 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item ">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Новые поступления</a>
-            </li>
-            <li class="site-list__item ">
-              <a href="form.html">Распродажа</a>
-            </li>
-          </ul>
-          <ul class="user-list">
-            <li class="user-list__item">
-              <a href="#"><img class="user-list__img" src="/img/icon-search.svg" alt = "Поиск"><span class="user-list__span-search">Поиск по сайту</span></a>
-            </li>
-            <li class="user-list__item">
-              <a href="#"><img class="user-list__img" src="/img/icon-cart.svg" alt = "Корзина"><span class="user-list__span-cart">Корзина:пока пуста</span></a>
-            </li>
-          </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__list-item ">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="form.html">Новые поступления</a>
+          </li>
+          <li class="main-nav__list-item ">
+            <a href="form.html">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__uitem">
+            <a href="#"><img class="main-nav__uitem-icon" src="/img/icon-search.svg" alt="Поиск"><span class="main-nav__uitem-search">Поиск
+                по сайту</span></a>
+          </li>
+          <li class="main-nav__uitem">
+            <a href="#"><img class="main-nav__uitem-icon" src="/img/icon-cart.svg" alt="Корзина"><span class="main-nav__uitem-cart">Корзина:пока
+                пуста</span></a>
+          </li>
+        </ul>
 
       </nav>
       <span class="page-header__delivery">Бесплатная доставка по России </span>
@@ -148,7 +150,11 @@
         </div>
         <div class="contacts__address">
           <span class="contacts__attr">адрес:</span>
-          <span class="contacts__address-info">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д. 19/8, офис 101</span>
+          <span class="contacts__address-info">
+            <span class="contacts__address-city">г. Санкт-Петербург, </span>
+            <span class="contacts__address-street">ул. Большая Конюшенная, </span>
+            <span class="contacts__address-building">д. 19/8, офис 101</span>
+          </span>
         </div>
       </div>
       <div class="contacts__map">
@@ -161,15 +167,15 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Лого">
-      <ul class="page-footer__social social">
-        <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
-        <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
-        <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item "><a class="page-footer__social-link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
+        <li class="page-footer__social-item"><a class="page-footer__social-link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
+        <li class="page-footer__social-item"><a class="page-footer__social-link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy" width="30"
-          height="35"></a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="#" class="page-footer__copyright-link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy"
+          width="30" height="35"></a>
       </div>
     </div>
   </footer>

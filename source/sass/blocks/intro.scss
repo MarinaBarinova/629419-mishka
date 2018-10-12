@@ -10,7 +10,7 @@
 }
 
 .intro__list {
-  list-style: none;
+  @include list-style-reset;
 }
 
 .intro__item {

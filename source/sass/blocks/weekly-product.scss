@@ -1,6 +1,6 @@
 .weekly-product {
   @include container;
-  background: $background-main;
+  background: $background-color;
 }
 
 .weekly-product__name {
@@ -10,7 +10,7 @@
 }
 
 .weekly-product__title {
-  color: $second-color;
+  color: $accent-color;
   font-weight: 700;
   font-size: 16px;
   font-family: $font-family;

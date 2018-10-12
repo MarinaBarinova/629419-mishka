@@ -15,7 +15,7 @@
 }
 
 
-.copyright__text {
+.page-footer__copyright-text {
   font-family: $font-family;
   font-size: 19px;
   font-weight: 700;
@@ -24,14 +24,14 @@
 }
 
 .page-footer__social {
+  @include list-style-reset;
   padding-bottom: 30px;
   display: flex;
   justify-content: center;
-  list-style: none;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.social__link--fb {
+.page-footer__social-link--fb {
   padding: 0 40px;
 }
 

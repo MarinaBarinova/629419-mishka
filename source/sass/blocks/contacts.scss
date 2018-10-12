@@ -38,10 +38,11 @@
 .contacts__address-info {
   display: inline-block;
   width: 150px;
+}
 
-  br {
-    display: none;
-  }
+.contacts__address-city,
+.contacts__address-street {
+  display: block;
 }
 
 .contacts__map {
@@ -89,10 +90,6 @@
   .contacts__address-info {
     display: inline-block;
     width: 300px;
-
-    br {
-      display: inline;
-    }
   }
 
   .contacts__icon {
