@@ -11,10 +11,9 @@
     flex-direction: column;
     width: 315px;
     padding-right: 50px;
-
   }
 
-  &::last-child {
+  &:last-child {
     @media (min-width: $desktop-width) {
       padding: 0;
     }

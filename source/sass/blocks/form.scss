@@ -48,8 +48,6 @@
       display: none;
     }
   }
-
-
 }
 
 .form__filter-list {
@@ -76,7 +74,6 @@
   @media (min-width: $tablet-width) {
     margin-left: 65px;
   }
-
 }
 
 .form__filter input[type="radio"],
@@ -142,8 +139,8 @@
   top: 10px;
 }
 
-input[type="radio"]:checked+label::after,
-input[type="checkbox"]:checked+label::after {
+input[type="radio"]:checked + label::after,
+input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
@@ -166,7 +163,6 @@ input[type="checkbox"]:checked+label::after {
       width: 100%;
     }
   }
-
 }
 
 .form__contacts-list {
