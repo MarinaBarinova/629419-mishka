@@ -1,9 +1,8 @@
 .catalog {
   @include container;
-}
 
-@media (min-width: $desktop-width) {
-  .catalog {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
+
 }

@@ -2,15 +2,36 @@
   @include container;
 }
 
+.intro__wrapper {
+  @media (min-width: $desktop-width) {
+    @include index-content-margins;
+  }
+}
+
 .intro__title {
   font-family: $font-family;
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+  }
 }
 
 .intro__list {
   @include list-style-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+  }
 }
 
 .intro__item {
@@ -22,6 +43,13 @@
   font-family: $font-family;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    font-size: 20px;
+  }
 }
 
 .intro__item:first-child {
@@ -37,34 +65,4 @@
   align-self: flex-start;
   padding-bottom: 28px;
   padding-top: 30px;
-}
-
-@media (min-width: $tablet-width) {
-  .intro__list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 500px;
-  }
-
-  .intro__title {
-    font-size: 43px;
-  }
-
-  .intro__item {
-    display: flex;
-    flex-direction: column;
-    width: 235px;
-    font-size: 20px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .intro__wrapper {
-    @include index-content-margins;
-  }
-
-  .intro__title {
-    font-size: 53px;
-  }
 }

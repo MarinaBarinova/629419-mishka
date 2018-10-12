@@ -9,6 +9,11 @@
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 670px;
+    margin-left: 175px;
+  }
 }
 
 .form__field {
@@ -25,6 +30,11 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+
+    width: 100px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -33,18 +43,40 @@
     width: 180px;
     height: 1px;
     background-color: $accent-color;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
+
+
 }
 
 .form__filter-list {
   @include list-style-reset;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 130px;
+  }
 }
 
 .form__filter {
   height: 65px;
   display: flex;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 65px;
+  }
+
 }
 
 .form__filter input[type="radio"],
@@ -110,8 +142,8 @@
   top: 10px;
 }
 
-input[type="radio"]:checked + label::after,
-input[type="checkbox"]:checked + label::after {
+input[type="radio"]:checked+label::after,
+input[type="checkbox"]:checked+label::after {
   display: block;
 }
 
@@ -119,13 +151,30 @@ input[type="checkbox"]:checked + label::after {
 .form__contacts {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    border: none;
+    height: 52px;
+    box-shadow: inset 0 -2px 0 #000000;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+    }
+  }
+
 }
 
-.form__contacts input[type="text"] {
-  border: none;
-  height: 52px;
-  box-shadow: inset 0 -2px 0 #000000;
+.form__contacts-list {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
+
 
 .form__contacts-label {
   margin-top: 20px;
@@ -160,6 +209,15 @@ input[type="email"] {
   border: 2px solid $text-color;
   background-color: $background-color;
 
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+
   &::placeholder {
     color: #cecece;
     font-family: $font-family;
@@ -176,103 +234,55 @@ input[type="email"] {
   font-size: 14px;
   font-weight: normal;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-top: 70px;
+  }
 }
 
 .form__btn {
   width: 100%;
-}
 
-
-@media (min-width: $tablet-width) {
-  .form__name {
-    width: 100px;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .form__field--contacts,
-  .form__field--tel,
-  .form__field--email,
-  .form__field--else {
-    .form__name {
-      width: 165px;
-    }
-
-    input[type="tel"],
-    input[type="email"] {
-      width: auto;
-      flex-grow: 1;
-    }
-  }
-
-  .form__message {
-    width: 500px;
-    flex-grow: 1;
-  }
-
-  .form__field-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .form__field--else .form__field-container {
-    justify-content: space-between;
-  }
-
-  .form__contacts {
-
-    flex-direction: row;
-    width: 100%;
-
-    input[type="text"] {
-      width: 100%;
-    }
-  }
-
-  .form__contacts-list {
-    flex-grow: 1;
-  }
-
-  .form__etc {
-    order: 1;
-    margin-top: 70px;
-  }
-
-  .form__btn {
+  @media (min-width: $tablet-width) {
     width: 230px;
     margin-top: 50px;
   }
 
-  .form__filter-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 200px;
-  }
-
-  .form__filter {
-    margin-left: 65px;
+  @media (min-width: $desktop-width) {
+    margin-left: 165px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .form__filter-list {
-    height: 130px;
+.form__field--contacts,
+.form__field--tel,
+.form__field--email,
+.form__field--else {
+  .form__name {
+    @media (min-width: $tablet-width) {
+      width: 165px;
+    }
   }
 
-  .form__text {
-    width: 670px;
-    margin-left: 175px;
+  input[type="tel"],
+  input[type="email"] {
+    @media (min-width: $tablet-width) {
+      width: auto;
+      flex-grow: 1;
+    }
   }
+}
 
-  .form__message {
-    width: 700px;
+.form__field-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+}
 
-  .form__btn {
-    margin-left: 165px;
+.form__field--else .form__field-container {
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
   }
 }
