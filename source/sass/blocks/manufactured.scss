@@ -1,15 +1,42 @@
 .manufactured {
   border: 1px solid #ececec;
-  background-color: $background-main;
+  background-color: $background-color;
 
   @include container;
   margin-top: 30px;
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 53px;
+    margin-bottom: 63px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+    position: relative;
+  }
 }
 
 .manufactured__title-container {
   padding-left: 34px;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding-left: 0;
+    width: 30%;
+  }
+}
+
+.manufactured__img-camera {
+  margin-right: 25px;
+  width: 32px;
 }
 
 .manufactured__title {
@@ -17,67 +44,61 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 150px;
+  }
+}
+
+.manufactured__video {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .manufactured__content {
   padding-left: 34px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+  }
 }
 
 .manufactured__text {
 
   padding: 34px 43px 29px 0;
   font-family: $font-family;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+  }
 }
 
-.manufactured_ordered {
-  margin-bottom: 33px;
-  margin-right: 34px;
+.manufactured__ordered {
+  width: 192px;
   display: block;
-}
+  margin-bottom: 33px;
 
-@media (min-width: $tablet-width) {
-  .manufactured {
-    margin-top: 53px;
-    margin-bottom: 63px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .manufactured__title-container {
-    order: 2;
-  }
-
-  .manufactured__video {
-    order: 1;
-  }
-
-  .manufactured__content {
-    order: 3;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .manufactured {
-    align-items: flex-end;
-    position: relative;
-  }
-
-  .manufactured__title-container {
-    flex-direction: column;
-    width: 40%;
-  }
-
-  .manufactured__content {
-    width: 40%;
-  }
-
-  .manufactured__video {
-    position: absolute;
-    top: 0;
-    left: 0;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+    width: 230px;
   }
 }

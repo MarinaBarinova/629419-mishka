@@ -13,24 +13,39 @@
     <div class="page-header__container">
       <a href="#" class="page-header__logo-container"><img class="page-header__logo-image" src="/img/logo-mobile.svg"
           alt="Мишка"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><img src="/img/icon-menu-open.svg" alt="Меню"></button>
-        <ul class="main-nav__list site-list main-nav__list--closed">
-          <li class="site-list__item site-list__item--active">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="site-list__item ">
+          <li class="main-nav__list-item ">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+          <li class="main-nav__list-item">
+            <a href="form.html">Новые поступления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Корзина</a>
+          <li class="main-nav__list-item ">
+            <a href="form.html">Распродажа</a>
           </li>
         </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__uitem">
+            <a href="#"><img class="main-nav__uitem-icon" src="/img/icon-search.svg" alt="Поиск"><span class="main-nav__uitem-search">Поиск
+                по сайту</span></a>
+          </li>
+          <li class="main-nav__uitem">
+            <a href="#"><img class="main-nav__uitem-icon" src="/img/icon-cart.svg" alt="Корзина"><span class="main-nav__uitem-cart">Корзина:пока
+                пуста</span></a>
+          </li>
+        </ul>
+
       </nav>
+      <span class="page-header__delivery">Бесплатная доставка по России </span>
+
     </div>
+
     <div class="page-header__block page-header__block--main">
       <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
     </div>
@@ -39,11 +54,11 @@
     <!-- <h1 class="visually-hidden">Магазин "Мишка"</h1>-->
     <nav class="nav">
       <ul class="nav__list">
-        <li class=" nav__item nav__item--interior">
-          <a href="#">Предметы интерьера</a>
+        <li class=" nav__item ">
+          <a href="#"><span class="nav__item-text">Предметы интерьера</span><img src="/img/icon-interior.svg" alt="интерьер"></a>
         </li>
-        <li class=" nav__item nav__item--toys ">
-          <a href="#">Детские игрушки</a>
+        <li class=" nav__item ">
+          <a href="#"><span class="nav__item-text">Детские игрушки</span><img src="/img/icon-toy.svg" alt="игрушка"></a>
         </li>
       </ul>
     </nav>
@@ -108,11 +123,12 @@
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
             лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
             фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <div class="reviews__author-wrapper">
-            <p class="reviews__author-name">Анастасия Красильникова</p>
-            <p class="reviews__author-contact">@misssssiskras</p>
-          </div>
+
         </blockquote>
+        <div class="reviews__author-wrapper">
+          <p class="reviews__author-name">Анастасия Красильникова</p>
+          <p class="reviews__author-contact">@misssssiskras</p>
+        </div>
         <a href="#" class="reviews__btn btn">Написать</a>
         <div class="reviews__container-arrows">
           <a href="#" class="reviews__prev"><img src="/img/icon-left-arrow.svg"></a>
@@ -129,12 +145,16 @@
 
 
         <div class="contacts__email">
-          <span class="contacts__attr">email</span>
+          <span class="contacts__attr">email:</span>
           <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__address">
-          <span class="contacts__attr">адрес</span>
-          <span class="contacts__address-info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <span class="contacts__attr">адрес:</span>
+          <span class="contacts__address-info">
+            <span class="contacts__address-city">г. Санкт-Петербург, </span>
+            <span class="contacts__address-street">ул. Большая Конюшенная, </span>
+            <span class="contacts__address-building">д. 19/8, офис 101</span>
+          </span>
         </div>
       </div>
       <div class="contacts__map">
@@ -147,18 +167,33 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Лого">
-      <ul class="page-footer__social social">
-        <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
-        <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
-        <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item "><a class="page-footer__social-link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
+        <li class="page-footer__social-item"><a class="page-footer__social-link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
+        <li class="page-footer__social-item"><a class="page-footer__social-link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy" width="30"
-          height="35"></a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="#" class="page-footer__copyright-link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy"
+          width="30" height="35"></a>
       </div>
     </div>
   </footer>
+  <script>
+    let navMain = document.querySelector(".main-nav");
+    let navToggle = document.querySelector(".main-nav__toggle");
+    navMain.classList.remove("main-nav--nojs");
+    navToggle.addEventListener("click", function () {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+      } else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+      }
+    })
+
+  </script>
 </body>
 
 </html>

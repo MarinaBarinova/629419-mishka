@@ -1,19 +1,21 @@
 .btn {
-
   text-align: center;
-  background: $background-main;
+  background: $background-color;
   font-weight: 600;
   font-family: $font-family;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 52px;
   color: $text-color;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid $text-color;
+  width: 260px;
+  height: 52px;
+
 
   &:hover {
     background: $text-color;
-    color: $background-main;
+    color: $background-color;
   }
 
   &:active {

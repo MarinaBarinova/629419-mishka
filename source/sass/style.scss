@@ -1,7 +1,7 @@
 @import "normalize";
 @import "variable";
 @import "global/mixins.scss";
-@import "fonts";
+@import "global/fonts";
 @import "global/scaffolding";
 @import "blocks/page-header";
 @import "blocks/main-nav";
@@ -16,4 +16,4 @@
 @import "blocks/manufactured";
 @import "blocks/form";
 @import "blocks/catalog-item";
-@import "blocks/form-container.scss"
+@import "blocks/form-container.scss";

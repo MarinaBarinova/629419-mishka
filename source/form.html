@@ -11,25 +11,39 @@
 <body>
   <header class="page-header">
     <div class="page-header__container">
-      <a href="#" class="page-header__logo-container"><img class="page-header__logo-image" src="/img/logo-mobile.svg"
+      <a href="index.html" class="page-header__logo-container"><img class="page-header__logo-image" src="/img/logo-mobile.svg"
           alt="Мишка"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><img src="/img/icon-menu-open.svg" alt="Меню"></button>
-        <ul class="main-nav__list site-list main-nav__list--closed">
-          <li class="site-list__item site-list__item--active">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item ">
             <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+            <a href="form.html">Новые поступления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Корзина</a>
+          <li class="site-list__item ">
+            <a href="form.html">Распродажа</a>
           </li>
         </ul>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a href="#"><img class="user-list__img" src="/img/icon-search.svg" alt="Поиск"><span class="user-list__span-search">Поиск
+                по сайту</span></a>
+          </li>
+          <li class="user-list__item">
+            <a href="#"><img class="user-list__img" src="/img/icon-cart.svg" alt="Корзина"><span class="user-list__span-cart">Корзина:пока
+                пуста</span></a>
+          </li>
+        </ul>
+
       </nav>
+      <span class="page-header__delivery">Бесплатная доставка по России </span>
+
     </div>
     <div class="page-header__block page-header__block--form">
       <h2 class="page-header__title ">Вязание на заказ</h2>
@@ -42,99 +56,114 @@
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="form__field  form__field--type ">
         <div class="form__field-container">
-        <div class="form__name">Тип</div>
-        <ul class="form__filter-list">
-          <li class="form__filter ">
-            <input type="radio" name="radio" value="radiobutton" id="radio1">
-            <label class="form__label" for="radio1">Аксессуар для
-              интерьера</label>
-          </li>
-          <li class="form__filter ">
-            <input type="radio" name="radio" value="radiobutton" id="radio2">
-            <label class="form__label" for="radio2">Детская игрушка</label>
-          </li>
-        </ul>
+          <div class="form__name">Тип</div>
+          <ul class="form__filter-list">
+            <li class="form__filter ">
+              <input type="radio" name="radio" value="radiobutton" id="radio1">
+              <label class="form__label" for="radio1">Аксессуар для
+                интерьера</label>
+            </li>
+            <li class="form__filter ">
+              <input type="radio" name="radio" value="radiobutton" id="radio2">
+              <label class="form__label" for="radio2">Детская игрушка</label>
+            </li>
+          </ul>
         </div>
       </fieldset>
       <fieldset class="form__field  form__field--color">
-          <div class="form__field-container">
-        <div class="form__name">Цвет</div>
-        <ul class="form__filter-list">
-          <li class="form__filter ">
-            <input type="checkbox" name="checkbox" id="color1">
-            <label class="form__label" for="color1">Белый</label> </li>
-          <li class="form__filter ">
-            <input type="checkbox" name="checkbox" id="color2">
-            <label class="form__label" for="color2">Серый</label> </li>
-          <li class="form__filter "><input type="checkbox" name="checkbox" id="color3">
-            <label class="form__label" for="color3">"Тиффани"</label> </li>
-          <li class="form__filter ">
-            <input type="checkbox" name="checkbox" id="color4">
-            <label class="form__label" for="color4">Черный</label> </li>
-          <li class="form__filter ">
-            <input type="checkbox" name="checkbox" id="color5">
-            <label class="form__label" for="color5">Розовый</label></li>
-          <li class="form__filter "><input type="checkbox" name="checkbox" id="color6">
-            <label class="form__label" for="color6">Оранжевый</label> </li>
-        </ul></div>
+        <div class="form__field-container">
+          <div class="form__name">Цвет</div>
+          <ul class="form__filter-list">
+            <li class="form__filter ">
+              <input type="checkbox" name="checkbox" id="color1">
+              <label class="form__label" for="color1">Белый</label> </li>
+            <li class="form__filter ">
+              <input type="checkbox" name="checkbox" id="color2">
+              <label class="form__label" for="color2">Серый</label> </li>
+            <li class="form__filter "><input type="checkbox" name="checkbox" id="color3">
+              <label class="form__label" for="color3">"Тиффани"</label> </li>
+            <li class="form__filter ">
+              <input type="checkbox" name="checkbox" id="color4">
+              <label class="form__label" for="color4">Черный</label> </li>
+            <li class="form__filter ">
+              <input type="checkbox" name="checkbox" id="color5">
+              <label class="form__label" for="color5">Розовый</label></li>
+            <li class="form__filter "><input type="checkbox" name="checkbox" id="color6">
+              <label class="form__label" for="color6">Оранжевый</label> </li>
+          </ul>
+        </div>
       </fieldset>
       <fieldset class="form__field form__field--contacts">
-          <div class="form__field-container">
-        <div class="form__name">ФИО</div>
-        <ul class="form__contacts-list">
-          <li class="form__contacts ">
-            <label class="form__contacts-label" for="name">Имя:</label>
-            <input type="text" id="name" required pattern="\S+[A-Za-zА-Яа-яЁё] placeholder=" Введите ваше имя*">
-          </li>
-          <li class="form__contacts ">
-            <label class="form__contacts-label" for="surname">Фамилия:</label>
-            <input type="text" id="surname" required pattern="\S+[A-Za-zА-Яа-яЁё] placeholder=" Укажите фамилию*">
-          </li>
-          <li class="form__contacts ">
-            <label class="form__contacts-label" for="patronymic">Отчество:</label>
-            <input type="text" id="patronymic" placeholder="Отчество, если желаете">
-          </li>
-        </ul>
+        <div class="form__field-container">
+          <div class="form__name">ФИО</div>
+          <ul class="form__contacts-list">
+            <li class="form__contacts ">
+              <label class="form__contacts-label" for="name">Имя:</label>
+              <input type="text" id="name" required pattern="\S+[A-Za-zА-Яа-яЁё]" placeholder=" Введите ваше имя*">
+            </li>
+            <li class="form__contacts ">
+              <label class="form__contacts-label" for="surname">Фамилия:</label>
+              <input type="text" id="surname" required pattern="\S+[A-Za-zА-Яа-яЁё]" placeholder=" Укажите фамилию*">
+            </li>
+            <li class="form__contacts ">
+              <label class="form__contacts-label" for="patronymic">Отчество:</label>
+              <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
         </div>
       </fieldset>
       <fieldset class="form__field form__field--tel">
-          <div class="form__field-container">
-        <div class="form__name">ТЕЛ</div>
-        <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+        <div class="form__field-container">
+          <div class="form__name">ТЕЛ</div>
+          <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </div>
       </fieldset>
       <fieldset class="form__field form__field--email">
-          <div class="form__field-container">
-        <div class="form__name">E-MAIL</div>
-        <input type="email" name="email" placeholder="Ваш e-mail">
+        <div class="form__field-container">
+          <div class="form__name">E-MAIL</div>
+          <input type="email" name="email" placeholder="Ваш e-mail">
         </div>
       </fieldset>
       <fieldset class="form__field form__field--else">
-          <div class="form__field-container">
-        <div class="form__name">ДОП</div>
-        <textarea class="form__message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        <p class="form__etc">*Поля обязательны для заполнения</p>
-        <button class="btn form__btn" type="submit">Отправить заказ</button>
+        <div class="form__field-container">
+          <div class="form__name">ДОП</div>
+          <textarea class="form__message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <p class="form__etc">*Поля обязательны для заполнения</p>
+          <button class="btn form__btn" type="submit">Отправить заказ</button>
         </div>
       </fieldset>
     </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="/img/logo-footer.svg" alt="Лого">
       <ul class="page-footer__social social">
         <li class="social__item "><a class="social__link social__link--inst" href="#"><img src="/img/icon-insta.svg"></a></li>
         <li class="social__item "><a class="social__link social__link--fb" href="#"><img src="/img/icon-fb.svg"></a></li>
         <li class="social__item "><a class="social__link social__link--twt" href="#"><img src="/img/icon-twitter.svg"></a></li>
       </ul>
-      <div>
-        <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy" width="30"
-            height="35"></a>
-        </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a href="#" class="copyright__link"></a><img src="/img/htmlacademy.svg" alt="logo_html-academy" width="30"
+          height="35"></a>
       </div>
     </div>
   </footer>
+  <script>
+    let navMain = document.querySelector(".main-nav");
+    let navToggle = document.querySelector(".main-nav__toggle");
+    navMain.classList.remove("main-nav--nojs");
+    navToggle.addEventListener("click", function () {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+      } else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+      }
+    })
+
+  </script>
 </body>
 
 </html>
