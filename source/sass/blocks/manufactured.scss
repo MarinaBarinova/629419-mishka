@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     align-items: flex-end;
     position: relative;
+    min-height: 455px;
   }
 }
 
@@ -51,6 +52,27 @@
 }
 
 .manufactured__video {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 101px;
+    height: 77px;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -35px;
+    background-image: url("/img/icon-play.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    @media (min-width: $desktop-width) {
+      margin-left: -45px;
+      margin-top: -40px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     order: 1;
   }
