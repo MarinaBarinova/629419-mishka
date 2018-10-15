@@ -25,6 +25,7 @@
   border: 1px solid #ececec;
   background-color: $background-color;
   padding-left: 28px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 100%;
