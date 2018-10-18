@@ -53,6 +53,18 @@
   }
 }
 
+.contacts__link {
+  color: $text-color;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #cbeee8;
+  }
+}
+
 .contacts__attr {
   min-width: 50px;
   display: inline-block;
