@@ -1,6 +1,14 @@
 .catalog-item {
   margin-top: 30px;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 54px;
@@ -9,8 +17,13 @@
   @media (min-width: $desktop-width) {
 
     flex-direction: column;
-    width: 315px;
-    padding-right: 50px;
+    width: 316px;
+
+    picture {
+      height: 462px;
+    }
+
+    margin-right: 50px;
   }
 
   &:last-child {

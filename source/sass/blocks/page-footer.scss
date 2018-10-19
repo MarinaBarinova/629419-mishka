@@ -33,6 +33,7 @@
   padding-right: 30px;
 }
 
+
 .page-footer__social {
   @include list-style-reset;
   padding-bottom: 30px;
@@ -51,6 +52,18 @@
   padding: 0 40px;
 }
 
+.page-footer__social-link--fb,
+.page-footer__social-link--insta,
+.page-footer__social-link--twitter {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__copyright {
   display: flex;
   justify-content: center;
@@ -62,8 +75,29 @@
   }
 }
 
+.page-footer__copyright-logo {
+  fill: $accent-color;
+
+  &:hover,
+  &:active {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-footer__logo {
   display: none;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
