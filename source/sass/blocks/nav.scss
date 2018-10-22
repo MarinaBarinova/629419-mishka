@@ -1,30 +1,21 @@
 .nav {
-  position: relative;
+
+   position: relative;
 
   @media (min-width: $tablet-width) {
     @include container;
+    margin: -5px auto;
+    padding-left: 16px;
   }
 
-  &::after {
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      display: block;
-      width: 100%;
-      height: 11px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: auto 23px;
-      background-position-x: 23px;
-    }
-
-    @media (min-width: $desktop-width) {
-      height: 17px;
-      background-size: auto 37px;
-      background-position-x: 23px;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: auto;
+    margin: 0;
+    padding-left: 8px;
   }
+
+
 }
 
 .nav__list {
@@ -34,10 +25,14 @@
     display: flex;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    @include container;
+  }
 }
 
 .nav__item {
-  height: 100px;
+  height: 104px;
   display: flex;
   justify-content: space-between;
 
@@ -45,17 +40,26 @@
   @media (min-width: $tablet-width) {
     width: 50%;
     height: 117px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    width: 50%;
+
     height: 117px;
-    padding-left: 36px;
-    padding-right: 36px;
+
     box-sizing: border-box;
+  }
+  svg {
+    padding-right: 4px;
+    @media (min-width: $tablet-width) {
+      padding-right: 0px;
+    }
+    @media (min-width: $desktop-width) {
+      padding-top: 21px;
+    }
+
   }
 }
 
@@ -77,12 +81,19 @@
         background-color: #63d1bb;
       }
     }
+
   }
 }
 
 .nav__item--toys {
   background-color: #56c3b2;
-
+  svg {
+    padding-left: 10px;
+    padding-right: 0;
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+    }
+  }
   @media (min-width: $desktop-width) {
     &:hover {
       position: relative;
@@ -104,6 +115,10 @@
 .nav__item a {
   @media (max-width: $mobile-width-only) {
     @include container;
+    align-items: flex-start;
+    padding-top: 26px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
   }
   text-decoration: none;
   color: $background-color;
@@ -114,15 +129,26 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 11px;
+    padding-bottom: 4px;
+    width: 100%;
+
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 17px;
+
   }
 }
 
 .nav__item-text {
   display: inline-block;
   width: 50%;
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+  @media (min-width: $desktop-width) {
+
+    padding-top: 15px;
+    width: 30%;
+  }
 }

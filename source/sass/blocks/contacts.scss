@@ -7,8 +7,7 @@
 
     @include container;
     min-height: 630px;
-    padding-top: 70px;
-    padding-bottom: 105px;
+    padding: 70px 0 105px 0;
     box-sizing: border-box;
   }
 }
@@ -19,19 +18,22 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    padding-left: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    @include index-content-margins;
+    margin-left: 182px;
+    margin-bottom: 78px;
     flex-direction: column;
     width: auto;
+    padding-left: 0;
     flex-grow: 1;
   }
 }
 
 .contacts__title {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding-top: 36px;
+  padding-bottom: 26px;
   box-sizing: border-box;
   font-weight: 700;
   font-family: $font-family;
@@ -42,19 +44,24 @@
   @include container;
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
+    padding-top: 71px;
+    padding-bottom: 59px;
     font-size: 43px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-
-    @include index-content-margins;
+    font-size: 53px;
+    margin-left: 176px;
+    padding-top: 84px;
+    padding-bottom: 61px;
   }
 }
 
 .contacts__link {
   color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px solid #62d1ba;
 
   &:hover {
     color: #46c1ae;
@@ -63,12 +70,24 @@
   &:active {
     color: #cbeee8;
   }
+
+  @media (min-width: $tablet-width) {
+    height:29px;
+
+  }
+  @media (min-width: $desktop-width) {
+    height: auto;
+  }
 }
 
 .contacts__attr {
   min-width: 50px;
   display: inline-block;
-  margin-right: 32px;
+  margin-right: 29px;
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+  }
+
 }
 
 .contacts__email,
@@ -98,7 +117,7 @@
 }
 
 .contacts__email {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .contacts__address-info {
@@ -126,6 +145,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 55px 0;
     background: url("/img/map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -135,7 +155,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 0;
+    left: 531px;
     top: 70px;
     width: 525px;
     height: 457px;
@@ -152,16 +172,17 @@
   display: block;
 
   @include container;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-
-    @include index-content-margins;
+    margin-left: 183px;
+    width: 225px;
   }
 }
 
@@ -171,13 +192,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 10px;
-    right: 0;
+    top: 45px;
+    right: -4px;
     display: block;
   }
 
   @media (min-width: $desktop-width) {
-    left: -100px;
-    top: 50px;
+    left: -107px;
+    right: auto;
+    top: 62px;
   }
 }

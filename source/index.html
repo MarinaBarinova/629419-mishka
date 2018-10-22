@@ -40,16 +40,16 @@
           </li>
         </ul>
         <ul class="main-nav__user-list">
-          <li class="main-nav__uitem">
+          <li class="main-nav__uitem main-nav__uitem-search">
             <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
                 <use xlink:href="#icon-search"></use>
-              </svg><span class="main-nav__uitem-search">Поиск
+              </svg><span>Поиск
                 по сайту</span></a>
           </li>
-          <li class="main-nav__uitem">
+          <li class="main-nav__uitem main-nav__uitem-cart">
             <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
                 <use xlink:href="#icon-cart"></use>
-              </svg><span class="main-nav__uitem-cart">Корзина: пока
+              </svg><span>Корзина: пока
                 пуста</span></a>
           </li>
         </ul>
@@ -60,10 +60,12 @@
     </div>
 
     <div class="page-header__block page-header__block--main">
-      <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
+      <div class="page-header__block-container">
+      <h2 class="page-header__title">Милые штуки <span>ручной </span>работы для дома</h2>
+      </div>
     </div>
   </header>
-  <main class=" products">
+  <main class="weekly-product">
     <!-- <h1 class="visually-hidden">Магазин "Мишка"</h1>-->
     <nav class="nav">
       <ul class="nav__list">
@@ -79,7 +81,7 @@
         </li>
       </ul>
     </nav>
-    <article class="weekly-product">
+    <article class="weekly-product__container">
       <div class="weekly-product__title-container">
         <h2 class="weekly-product__name">Вязаные корзинки</h2>
         <h3 class="weekly-product__title">Товар недели</h3>
@@ -124,32 +126,32 @@
 
     <section class="intro">
       <div class="intro__wrapper">
-        <h3 class="intro__title">Коротко о нас</h3>
+        <h3 class="intro__title">Коротко о нас:</h3>
         <ul class="intro__list">
-          <li class="intro__item"> <svg class="intro__img" width="32" height="37">
+          <li class="intro__item intro__item-ecology"> <svg class="intro__img intro__img--flower" width="32" height="37">
               <use xlink:href="#icon-feature-flower"></use>
-            </svg>Экологически
-            чистые материалы</li>
-          <li class="intro__item"><svg class="intro__img" width="47" height="27">
+            </svg><span>Экологически
+              чистые материалы</span></li>
+          <li class="intro__item intro__item-money"><svg class="intro__img intro__img--money" width="47" height="27">
               <use xlink:href="#icon-feature-money"></use>
-            </svg>Скандинавский
-            стиль по российской цене</li>
-          <li class="intro__item"><svg class="intro__img" width="34" height="27">
+            </svg><span>Скандинавский
+              стиль по российской цене</span></li>
+          <li class="intro__item intro__item-heart"><svg class="intro__img intro__img--heart" width="34" height="27">
               <use xlink:href="#icon-feature-heart"></use>
-            </svg>Увеличивает
-            лайки на фотографиях</li>
-          <li class="intro__item"><svg class="intro__img" width="35" height="34">
+            </svg><span>Увеличивает
+              лайки на фотографиях</span></li>
+          <li class="intro__item"><svg class="intro__img intro__img--ball" width="35" height="34">
               <use xlink:href="#icon-feature-ball"></use>
-            </svg>Связано
-            вручную с любовью и умилением</li>
-          <li class="intro__item"><svg class="intro__img" width="55" height="23">
+            </svg><span>Связано
+              вручную с любовью и умилением</span></li>
+          <li class="intro__item"><svg class="intro__img intro__img--rocket" width="55" height="23">
               <use xlink:href="#icon-feature-rocket"></use>
-            </svg>Поддержка
-            отечественного производителя</li>
-          <li class="intro__item"><svg class="intro__img" width="33" height="32">
+            </svg><span>Поддержка
+              отечественного производителя</span></li>
+          <li class="intro__item"><svg class="intro__img intro__img--gift" width="33" height="32">
               <use xlink:href="#icon-feature-gift"></use>
-            </svg>Поставляется
-            в подарочной упаковке</li>
+            </svg><span>Поставляется
+              в подарочной упаковке</span></li>
         </ul>
       </div>
     </section>
@@ -182,7 +184,7 @@
 
 
         <div class="contacts__email">
-          <span class="contacts__attr">email:</span>
+          <span class="contacts__attr">e-mail:</span>
           <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__address">
