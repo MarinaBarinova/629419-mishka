@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 56px;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 67px;
     margin-bottom: 0;
@@ -13,7 +14,7 @@
 
 .intro__wrapper {
   @media (min-width: $desktop-width) {
-    margin-left: 178px;
+    margin-left: 170px;
   }
 }
 
@@ -74,16 +75,16 @@
   use {
     fill: $accent-color;
   }
+
   span {
     @media (min-width: $tablet-width) {
-      padding-left: 8px
+      padding-left: 8px;
     }
 
     @media (min-width: $desktop-width) {
       padding-left: 0;
       line-height: 21px;
     }
-
   }
 
   @media (min-width: $tablet-width) {
@@ -100,37 +101,42 @@
 
   &:first-child {
     width: 75%;
+
     @media (min-width: $tablet-width) {
       width: 34%;
     }
-
   }
+
   &:nth-child(n+4) {
     width: 96%;
+
     @media (min-width: $tablet-width) {
       width: 45%;
-      padding-left: 53px
+      padding-left: 53px;
     }
+
     @media (min-width: $desktop-width) {
       padding-left: 106px;
       width: 51%;
     }
+
     span {
       @media (min-width: $desktop-width) {
         padding-left: 10px;
       }
     }
   }
+
   &:last-child {
     @media (min-width: $tablet-width) {
       width: 44%;
     }
+
     @media (min-width: $desktop-width) {
       padding-left: 106px;
       width: 50%;
     }
-
-    }
+  }
 }
 
 .intro__img {
@@ -138,12 +144,12 @@
   padding-bottom: 18px;
   padding-top: 28px;
 
-
   @media (min-width: $desktop-width) {
 
     padding-left: 10px;
   }
 }
+
 .intro__img--flower {
   padding-left: 10px;
 
@@ -151,53 +157,60 @@
     padding-top: 2px;
     padding-left: 16px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-left: 10px;
   }
 }
 
-
-
-.intro__img--heart, .intro__img--gift, .intro__img--rocket, .intro__img--money {
+.intro__img--heart,
+.intro__img--gift,
+.intro__img--rocket,
+.intro__img--money {
   @media (min-width: $tablet-width) {
-  padding-top: 60px;
+    padding-top: 60px;
   }
 }
+
 .intro__img--heart {
   padding-top: 34px;
   padding-left: 8px;
   padding-bottom: 22px;
-  @media  (min-width: $tablet-width)  {
+
+  @media (min-width: $tablet-width) {
     padding-top: 68px;
     padding-left: 15px;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 64px;
     padding-left: 8px;
-
   }
 }
 
 .intro__img--money {
   padding-bottom: 27px;
+
   @media (min-width: $tablet-width) {
     padding-left: 7px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    padding-bottom:26px;
-
+    padding-bottom: 26px;
   }
 }
 
 .intro__img--ball {
-  padding-left:5px;
+  padding-left: 5px;
   padding-top: 31px;
-  @media (min-width: $tablet-width)  {
+
+  @media (min-width: $tablet-width) {
     padding-left: 10px;
     padding-top: 5px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 14px;
     padding-bottom: 18px;
@@ -205,15 +218,16 @@
   }
 }
 
-.intro__img--rocket{
+.intro__img--rocket {
   padding-top: 32px;
-    padding-left: 0px;
-    padding-bottom: 27px;
+  padding-left: 0;
+  padding-bottom: 27px;
 
-    @media (min-width: $tablet-width)  {
-      padding-top: 64px;
-      padding-left: 2px;
-    }
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-left: 2px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-left: 5px;
     padding-bottom: 26px;
@@ -221,7 +235,7 @@
   }
 }
 
-.intro__img--gift{
+.intro__img--gift {
   padding-top: 31px;
   padding-left: 3px;
   padding-bottom: 20px;
@@ -231,6 +245,7 @@
     padding-left: 11px;
     padding-bottom: 22px;
   }
+
   @media (min-width: $desktop-width) {
     padding-left: 14px;
     padding-bottom: 21px;

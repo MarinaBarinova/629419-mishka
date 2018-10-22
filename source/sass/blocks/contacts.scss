@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 182px;
+    margin-left: 175px;
     margin-bottom: 78px;
     flex-direction: column;
     width: auto;
@@ -52,7 +52,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
     font-size: 53px;
-    margin-left: 176px;
+    margin-left: 170px;
     padding-top: 84px;
     padding-bottom: 61px;
   }
@@ -72,9 +72,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    height:29px;
-
+    height: 29px;
   }
+
   @media (min-width: $desktop-width) {
     height: auto;
   }
@@ -84,10 +84,10 @@
   min-width: 50px;
   display: inline-block;
   margin-right: 29px;
+
   @media (min-width: $tablet-width) {
     margin-right: 24px;
   }
-
 }
 
 .contacts__email,
@@ -155,7 +155,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 531px;
+    right: 0;
     top: 70px;
     width: 525px;
     height: 457px;
@@ -181,11 +181,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-left: 183px;
+    margin-left: 176px;
     width: 225px;
   }
 }
-
 
 .contacts__icon {
   display: none;

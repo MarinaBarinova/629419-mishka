@@ -1,11 +1,13 @@
 .catalog {
   @include container;
+
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-top: 65px;
+    margin-top: 79px;
+    padding-left: 9px;
   }
 }

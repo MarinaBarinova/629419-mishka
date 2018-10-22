@@ -21,7 +21,7 @@
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs main-nav--with-bg">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
         <ul class="main-nav__list">
@@ -39,18 +39,18 @@
           </li>
         </ul>
         <ul class="main-nav__user-list">
-            <li class="main-nav__uitem">
-                <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
-                    <use xlink:href="#icon-search"></use>
-                  </svg><span class="main-nav__uitem-search">Поиск
-                    по сайту</span></a>
-              </li>
-              <li class="main-nav__uitem">
-                <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
-                    <use xlink:href="#icon-cart"></use>
-                  </svg><span class="main-nav__uitem-cart">Корзина: пока
-                    пуста</span></a>
-              </li>
+          <li class="main-nav__uitem main-nav__uitem-search">
+            <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
+                <use xlink:href="#icon-search"></use>
+              </svg><span>Поиск
+                по сайту</span></a>
+          </li>
+          <li class="main-nav__uitem main-nav__uitem-cart">
+            <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
+                <use xlink:href="#icon-cart"></use>
+              </svg><span>Корзина: пока
+                пуста</span></a>
+          </li>
         </ul>
 
       </nav>
@@ -58,7 +58,9 @@
 
     </div>
     <div class="page-header__block page-header__block--catalog">
-      <h2 class="page-header__title">Каталог товаров</h2>
+      <div class="page-header__block-container">
+        <h2 class="page-header__title">Каталог товаров</h2>
+      </div>
     </div>
   </header>
   <main class="main-catalog">
@@ -79,7 +81,7 @@
           <h3 class="catalog-item__name">Зайчик-попрыгайчик</h3>
           <p class="catalog-item__features">Рост 30 см, вес 200 г</p>
           <div class="catalog-item__buy">
-              <span class="catalog-item__price">1200 руб.</span>
+              <span class="catalog-item__price">1 200 руб.</span>
               <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -126,7 +128,7 @@
           <h3 class="catalog-item__name">Большая корзина для игрушек</h3>
           <p class="catalog-item__features catalog-item__features--big-name">Диаметр 30 см, высота 30 см</p>
           <div class="catalog-item__buy">
-              <span class="catalog-item__price">1500 руб.</span>
+              <span class="catalog-item__price">1 500 руб.</span>
               <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
@@ -136,7 +138,7 @@
     </section>
     <section class="manufactured">
       <div class="manufactured__title-container">
-        <svg class="manufactured__img-camera" width="32">
+        <svg class="manufactured__img-camera" width="32" height="32">
           <use xlink:href="#icon-video"></use>
         </svg>
         <h3 class="manufactured__title">Процесс производства</h3>

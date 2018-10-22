@@ -4,6 +4,7 @@
     padding: 0;
     margin-top: -119px;
   }
+
   @media (min-width: $desktop-width) {
     @include container;
     padding: 0 50px;
@@ -30,7 +31,7 @@
     background: none;
     width: auto;
     margin-top: 72px;
-    padding-left: 9px;
+    padding-left: 0;
   }
 
   &::after {
@@ -46,6 +47,7 @@
     background-size: auto 6px;
     background-position-x: 11px;
     z-index: 1;
+
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
@@ -53,7 +55,7 @@
       display: block;
       width: 100%;
       height: 19px;
-      background-image: url(../img/bg-zigzag-line.svg);
+      background-image: url("../img/bg-zigzag-line.svg");
       background-repeat: repeat-x;
       background-size: 768px 17px;
       background-position-x: 19px;
@@ -123,6 +125,7 @@
 .weekly-product__title-container {
   padding-top: 5px;
   padding-left: 2px;
+
   @media (min-width: $tablet-width) {
     padding: 0;
 
@@ -132,7 +135,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 48px;
-    padding-left: 28px;
+    padding-left: 30px;
   }
 }
 
@@ -186,8 +189,8 @@
     margin-top: 50px;
     margin-bottom: 114px;
     margin-left: 0;
-
   }
+
   td {
     height: 38px;
     border-bottom: 1px solid #ececec;
@@ -199,6 +202,7 @@
 
   & td:first-child {
     width: 38%;
+
     @media (min-width: $tablet-width) {
       width: 31%;
     }
@@ -210,8 +214,6 @@
     }
   }
 }
-
-
 
 .weekly-products__picture {
   margin-top: 25px;
@@ -231,7 +233,6 @@
     top: 0;
     width: 525px;
     height: 636px;
-    left: 532px;
     right: 0;
     z-index: -1;
     margin-top: 0;
@@ -250,6 +251,7 @@
   @media (min-width: $desktop-width) {
     text-align: left;
   }
+
   button {
     @media (min-width: $desktop-width) {
       line-height: 45px;
@@ -273,7 +275,6 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 10px;
-
   }
 }
 
@@ -287,13 +288,7 @@
     width: 292px;
     margin-top: 40px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
-
-
 
 .weekly-product__details-container {
   @media (min-width: $tablet-width) {
@@ -310,6 +305,4 @@
     margin-top: 42px;
     padding-bottom: 100px;
   }
-
-
 }
