@@ -24,6 +24,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-left: 12px;
+    margin-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +51,10 @@
     @media (min-width: $tablet-width) {
       margin-top: 88px;
       height: 15px;
-
+      width: 100%;
+      display: block;
+      left: 0;
+      position: absolute;
       background-size: 768px 15px;
       background-position-x: 18px;
     }
@@ -77,7 +82,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 4px;
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -203,7 +208,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 165px;
+    width: 175px;
     margin: 0;
     order: 5;
     padding-top: 31px;
@@ -212,7 +217,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 13px;
-    width: 175px;
   }
 }
 

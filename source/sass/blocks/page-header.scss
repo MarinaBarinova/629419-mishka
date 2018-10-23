@@ -12,14 +12,14 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-
-  @include container;
-  padding-bottom: 20px;
+  min-height: 57px;
   border-bottom: 1px solid #ececec;
+  @include container;
 
   @media (min-width: $tablet-width) {
     padding-left: 16px;
     padding-right: 0;
+    padding-bottom: 21px;
     border-bottom: none;
   }
 
@@ -32,9 +32,11 @@
 .page-header__logo-container {
   width: 100%;
   text-align: center;
+  padding-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding: 0;
     position: absolute;
     height: 50px;
     top: 22px;

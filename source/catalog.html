@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <div style="display:none">
-        <include src="build/img/sprite.svg"></include>
-        </div>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__container">
       <a href="/" class="page-header__logo-container">
@@ -21,38 +21,39 @@
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__list-item ">
-            <a href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="form.html">Новые поступления</a>
-          </li>
-          <li class="main-nav__list-item ">
-            <a href="form.html">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list">
-          <li class="main-nav__uitem main-nav__uitem-search">
-            <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
-                <use xlink:href="#icon-search"></use>
-              </svg><span>Поиск
-                по сайту</span></a>
-          </li>
-          <li class="main-nav__uitem main-nav__uitem-cart">
-            <a href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
-                <use xlink:href="#icon-cart"></use>
-              </svg><span>Корзина: пока
-                пуста</span></a>
-          </li>
-        </ul>
-
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-item-link main-nav__list-item-link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__list-item ">
+              <a class="main-nav__list-item-link main-nav__list-item-link--order" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-item-link main-nav__list-item-link--new" href="form.html">Новые поступления</a>
+            </li>
+            <li class="main-nav__list-item ">
+              <a class="main-nav__list-item-link main-nav__list-item-link--sell" href="form.html">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+            <li class="main-nav__uitem main-nav__uitem-search">
+              <a class="main-nav__uitem-link" href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
+                  <use xlink:href="#icon-search"></use>
+                </svg><span>Поиск
+                  по сайту</span></a>
+            </li>
+            <li class="main-nav__uitem main-nav__uitem-cart">
+              <a class="main-nav__uitem-link main-nav__uitem-link--cart" href="#"><svg class="main-nav__uitem-icon"
+                  width="17" height="17">
+                  <use xlink:href="#icon-cart"></use>
+                </svg><span>Корзина: пока
+                  пуста</span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <span class="page-header__delivery">Бесплатная доставка по России </span>
 
@@ -67,9 +68,9 @@
     <section class="catalog">
       <article class="catalog-item">
         <picture>
-            <source type="image/webp" media="(min-width:1150px)" srcset="/img/photo-hare-desktop@1x.webp 1x, /img/photo-hare-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-hare-tablet@1x.webp 1x, /img/photo-hare-tablet@2x.webp 2x">
-              <source type="image/webp" class="catalog-item__img" srcset="/img/photo-hare-mobile@1x.webp, /img/photo-hare-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width:1150px)" srcset="/img/photo-hare-desktop@1x.webp 1x, /img/photo-hare-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-hare-tablet@1x.webp 1x, /img/photo-hare-tablet@2x.webp 2x">
+          <source type="image/webp" class="catalog-item__img" srcset="/img/photo-hare-mobile@1x.webp, /img/photo-hare-mobile@2x.webp 2x">
 
           <source media="(min-width:1150px)" srcset="/img/photo-hare-desktop@1x.jpg 1x, /img/photo-hare-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="/img/photo-hare-tablet@1x.jpg 1x, /img/photo-hare-tablet@2x.jpg 2x">
@@ -80,23 +81,23 @@
           <h3 class="catalog-item__name">Зайчик-попрыгайчик</h3>
           <p class="catalog-item__features">Рост 30 см, вес 200 г</p>
           <div class="catalog-item__buy">
-              <span class="catalog-item__price">1 200 руб.</span>
-              <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
-                  <use xlink:href="#icon-cart"></use>
-                </svg></a>
+            <span class="catalog-item__price">1 200 руб.</span>
+            <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
+                <use xlink:href="#icon-cart"></use>
+              </svg></a>
           </div>
         </div>
       </article>
       <article class="catalog-item">
         <picture>
-            <source type="image/webp" media="(min-width:1150px)" srcset="/img/photo-bowl-desktop@1x.webp 1x, /img/photo-bowl-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-bowl-tablet@1x.webp 1x, /img/photo-bowl-tablet@2x.webp 2x">
-              <source type="image/webp" class="catalog-item__img" srcset="/img/photo-bowl-mobile@1x.webp, /img/photo-bowl-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width:1150px)" srcset="/img/photo-bowl-desktop@1x.webp 1x, /img/photo-bowl-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-bowl-tablet@1x.webp 1x, /img/photo-bowl-tablet@2x.webp 2x">
+          <source type="image/webp" class="catalog-item__img" srcset="/img/photo-bowl-mobile@1x.webp, /img/photo-bowl-mobile@2x.webp 2x">
 
           <source media="(min-width:1150px)" srcset="/img/photo-bowl-desktop@1x.jpg 1x, /img/photo-bowl-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="/img/photo-bowl-tablet@1x.jpg 1x, /img/photo-bowl-tablet@2x.jpg 2x">
           <img class="catalog-item__img" src="/img/photo-bowl-mobile@1x.jpg" srcset="/img/photo-bowl-mobile@2x.jpg 2x"
-          alt="catalog-product">
+            alt="catalog-product">
 
         </picture>
         <div class="catalog-item__description">
@@ -112,9 +113,9 @@
       </article>
       <article class="catalog-item">
         <picture>
-            <source type="image/webp" media="(min-width:1150px)" srcset="/img/photo-toys-desktop@1x.webp 1x, /img/photo-toys-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-toys-tablet@1x.webp 1x, /img/photo-toys-tablet@2x.webp 2x">
-              <source type="image/webp" class="catalog-item__img" srcset="/img/photo-toys-mobile@1x.webp, /img/photo-toys-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width:1150px)" srcset="/img/photo-toys-desktop@1x.webp 1x, /img/photo-toys-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="/img/photo-toys-tablet@1x.webp 1x, /img/photo-toys-tablet@2x.webp 2x">
+          <source type="image/webp" class="catalog-item__img" srcset="/img/photo-toys-mobile@1x.webp, /img/photo-toys-mobile@2x.webp 2x">
 
           <source media="(min-width:1150px)" srcset="/img/photo-toys-desktop@1x.jpg 1x, /img/photo-toys-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="/img/photo-toys-tablet@1x.jpg 1x, /img/photo-toys-tablet@2x.jpg 2x">
@@ -126,10 +127,10 @@
           <h3 class="catalog-item__name">Большая корзина для игрушек</h3>
           <p class="catalog-item__features catalog-item__features--big-name">Диаметр 30 см, высота 30 см</p>
           <div class="catalog-item__buy">
-              <span class="catalog-item__price">1 500 руб.</span>
-              <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
-                  <use xlink:href="#icon-cart"></use>
-                </svg></a>
+            <span class="catalog-item__price">1 500 руб.</span>
+            <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
+                <use xlink:href="#icon-cart"></use>
+              </svg></a>
           </div>
         </div>
       </article>
@@ -143,9 +144,9 @@
       </div>
       <div class="manufactured__video">
         <picture>
-            <source type="image/webp" media="(min-width:1150px)" srcset="/img/video-desktop@1x.webp 1x, /img/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="/img/video-tablet@1x.webp 1x, /img/video-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="/img/video-mobile@1x.webp, /img/video-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width:1150px)" srcset="/img/video-desktop@1x.webp 1x, /img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="/img/video-tablet@1x.webp 1x, /img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="/img/video-mobile@1x.webp, /img/video-mobile@2x.webp 2x">
 
           <source media="(min-width:1150px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
@@ -160,25 +161,31 @@
     </section>
   </main>
   <footer class="page-footer">
-      <div class="page-footer__wrapper">
-          <svg class="page-footer__logo" width="102" height="34">
-              <use xlink:href="#logo-footer"></use></svg>
-        <ul class="page-footer__social">
-          <li class="page-footer__social-item "><svg class= "page-footer__social-link--insta" width="22" height="21">
-              <use xlink:href="#icon-insta"></use></svg></li>
-          <li class="page-footer__social-item"><svg class="page-footer__social-link--fb" width="15" height="28">
-              <use xlink:href="#icon-fb"></use></svg></li>
-          <li class="page-footer__social-item"><svg class="page-footer__social-link--twitter" width="23" height="22">
-              <use xlink:href="#icon-twitter"></use></svg></li>
-        </ul>
-        <div class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
-          <a href="https://htmlacademy.ru""><svg class="page-footer__copyright-logo" width="27" height="34">
-              <use xlink:href="#logo-htmlacademy"></use>
-            </svg></a>
-        </div>
+    <div class="page-footer__wrapper">
+      <svg class="page-footer__logo" width="102" height="34">
+        <use xlink:href="#logo-footer"></use>
+      </svg>
+      <ul class="page-footer__social">
+        <li class="page-footer__social-item "><svg class="page-footer__social-link--insta" width="22" height="21">
+            <use xlink:href="#icon-insta"></use>
+          </svg></li>
+        <li class="page-footer__social-item"><svg class="page-footer__social-link--fb" width="15" height="28">
+            <use xlink:href="#icon-fb"></use>
+          </svg></li>
+        <li class="page-footer__social-item"><svg class="page-footer__social-link--twitter" width="23" height="22">
+            <use xlink:href="#icon-twitter"></use>
+          </svg></li>
+      </ul>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a href="https://htmlacademy.ru""><svg class=" page-footer__copyright-logo" width="27" height="34">
+          <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
-    </footer>
+    </div>
+  </footer>
 </body>
 <script src="js/menu.js"></script>
+
 </html>

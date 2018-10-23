@@ -24,37 +24,39 @@
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка">
         </picture>
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link main-nav__list-item-link--catalog" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__list-item ">
-            <a class="main-nav__list-item-link main-nav__list-item-link--order" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-item-link main-nav__list-item-link--new"  href="form.html">Новые поступления</a>
-          </li>
-          <li class="main-nav__list-item ">
-            <a class="main-nav__list-item-link main-nav__list-item-link--sell"  href="form.html">Распродажа</a>
-          </li>
-        </ul>
-        <ul class="main-nav__user-list">
-          <li class="main-nav__uitem main-nav__uitem-search">
-            <a class="main-nav__uitem-link" href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
-                <use xlink:href="#icon-search"></use>
-              </svg><span>Поиск
-                по сайту</span></a>
-          </li>
-          <li class="main-nav__uitem main-nav__uitem-cart">
-            <a class="main-nav__uitem-link main-nav__uitem-link--cart" href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
-                <use xlink:href="#icon-cart"></use>
-              </svg><span>Корзина: пока
-                пуста</span></a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-item-link main-nav__list-item-link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__list-item ">
+              <a class="main-nav__list-item-link main-nav__list-item-link--order" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__list-item-link main-nav__list-item-link--new" href="form.html">Новые поступления</a>
+            </li>
+            <li class="main-nav__list-item ">
+              <a class="main-nav__list-item-link main-nav__list-item-link--sell" href="form.html">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="main-nav__user-list">
+            <li class="main-nav__uitem main-nav__uitem-search">
+              <a class="main-nav__uitem-link" href="#"><svg class="main-nav__uitem-icon" width="17" height="17">
+                  <use xlink:href="#icon-search"></use>
+                </svg><span>Поиск
+                  по сайту</span></a>
+            </li>
+            <li class="main-nav__uitem main-nav__uitem-cart">
+              <a class="main-nav__uitem-link main-nav__uitem-link--cart" href="#"><svg class="main-nav__uitem-icon"
+                  width="17" height="17">
+                  <use xlink:href="#icon-cart"></use>
+                </svg><span>Корзина: пока
+                  пуста</span></a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <span class="page-header__delivery">Бесплатная доставка по России </span>
 
@@ -66,7 +68,7 @@
       </div>
     </div>
   </header>
-  <main class="main-content" >
+  <main class="main-content">
     <!-- <h1 class="visually-hidden">Магазин "Мишка"</h1>-->
     <nav class="nav">
       <ul class="nav__list">
@@ -199,7 +201,8 @@
         </div>
       </div>
       <div class="contacts__map-container">
-          <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A021d97d19f6e7b9242db36c5e56495f20ec98c7e817a38838f3b0b3a77455c22&amp;source=constructor" width="100%" height="457" frameborder="0"></iframe>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A021d97d19f6e7b9242db36c5e56495f20ec98c7e817a38838f3b0b3a77455c22&amp;source=constructor"
+          width="100%" height="457" frameborder="0"></iframe>
 
 
       </div>

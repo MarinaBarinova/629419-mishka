@@ -38,6 +38,10 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    padding-left: 12px;
+  }
+
   @media (min-width: $desktop-width) {
     @include container;
     padding-left: 15px;
@@ -54,7 +58,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-left: 5px;
+    padding-left: 0;
     margin-top: 60px;
   }
 
@@ -62,7 +66,6 @@
     background: none;
     width: auto;
     margin-top: 72px;
-    padding-left: 0;
   }
 }
 
@@ -102,7 +105,7 @@
     margin: 0;
     width: 80px;
     text-align: center;
-    padding-right: 15px;
+    padding-right: 22px;
     padding-top: 2px;
   }
 

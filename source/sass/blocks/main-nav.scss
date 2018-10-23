@@ -1,7 +1,13 @@
 .main-nav {
+  position: relative;
+}
+
+.main-nav__wrapper {
+
   background: $background-color;
 
   @include container;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -26,12 +32,12 @@
   background: none;
   position: absolute;
   right: 29px;
-  top: 8px;
+  top: -49px;
 
   border: none;
   cursor: pointer;
   width: 21px;
-  height: 14px;
+  height: 18px;
   z-index: 2;
 
   &:active {
@@ -67,20 +73,12 @@
       height: 0;
     }
   }
-
-  .main-nav__list,
-  .main-nav__user-list {
-    @media (max-width: $mobile-width-only) {
-      display: none;
-      height: 0;
-    }
-  }
 }
 
 .main-nav--opened {
   .main-nav__toggle {
-    right: 0;
-    top: -20px;
+    right: 28px;
+    top: 16px;
 
     &::before,
     &::after {
@@ -109,7 +107,38 @@
       display: block;
     }
   }
+
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 57px;
+    right: 0;
+    z-index: 10;
+    min-height: 40vh;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__list-item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__uitem {
+    display: block;
+  }
+
+}
+
+
 
 .main-nav__list {
   @include list-style-reset;
