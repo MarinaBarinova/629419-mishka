@@ -57,7 +57,7 @@
 
   &:nth-child(odd) {
     @media (min-width: $tablet-width) {
-      background-color: #ececec;
+      background-color: #f1f1f1;
     }
   }
 
@@ -80,14 +80,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-top: 56px;
-    width: 11%;
+    width: 25%;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 59px;
-    width: 10%;
+    width: 11%;
   }
+
 
   &::after {
     content: "";
@@ -101,6 +100,54 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+}
+
+
+.form__name--color,
+.form__name--type {
+  @media (min-width: $tablet-width) {
+    margin-top: 56px;
+    width: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 59px;
+    width: 10%;
+  }
+}
+
+.form__name--color {
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+  }
+}
+
+.form__name--tel,
+.form__name--else {
+  margin-top: 33px;
+}
+
+.form__name--email {
+  margin-top: 31px;
+
+  &::after {
+    left: 80px;
+    width: 181px;
+  }
+}
+
+.form__name--contacts {
+  margin-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
   }
 }
 
@@ -124,7 +171,7 @@
   }
 }
 
-.form__field--color .form__filter-list {
+.form__filter-list--color {
   margin-top: 23px;
 
   @media (min-width: $tablet-width) {
@@ -142,37 +189,6 @@
     margin-left: 7px;
     width: 73%;
   }
-
-
-  .form__filter:nth-child(odd) {
-    @media (min-width: $tablet-width) {
-      width: 52%;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 31%;
-    }
-  }
-
-  .form__filter:nth-child(even) {
-    @media (min-width: $tablet-width) {
-      width: 47%;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 31%;
-    }
-  }
-}
-
-.form__field--color {
-  .form__name {
-    margin-top: 20px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 52px;
-    }
-  }
 }
 
 .form__filter {
@@ -189,6 +205,27 @@
 .form__filter input[type="checkbox"] {
   display: none;
 }
+
+.form__filter--color:nth-child(odd) {
+  @media (min-width: $tablet-width) {
+    width: 52%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 31%;
+  }
+}
+
+.form__filter--color:nth-child(even) {
+  @media (min-width: $tablet-width) {
+    width: 47%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 31%;
+  }
+}
+
 
 .form__label {
   font-family: $font-family;
@@ -210,8 +247,8 @@
   }
 }
 
-.form__field--type .form__label,
-.form__field--color .form__label {
+.form__label--type,
+.form__label--color {
   &::before {
     position: absolute;
     content: "";
@@ -255,7 +292,7 @@
   }
 }
 
-.form__field--color .form__label {
+.form__label--color {
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
@@ -264,7 +301,7 @@
   }
 }
 
-.form__field--type .form__label::before {
+.form__label--type::before {
   border-radius: 50%;
   top: 10px;
 
@@ -273,7 +310,7 @@
   }
 }
 
-.form__field--color .form__label::after {
+.form__label--color::after {
   height: 48px;
   width: 48px;
   border-radius: 0;
@@ -290,8 +327,7 @@
   }
 }
 
-input[type="radio"]:checked + label::after,
-input[type="checkbox"]:checked + label::after {
+.form__control--checkable:checked + label::after {
   display: block;
 }
 
@@ -305,39 +341,35 @@ input[type="checkbox"]:checked + label::after {
     width: 100%;
     padding-top: 25px;
   }
+}
 
-  input[type="text"] {
-    border: none;
-    height: 55px;
-    padding: 0;
-    box-shadow: inset 0 -2px 0 #000000;
+.form__control--textfield {
+  border: none;
+  height: 55px;
+  padding: 0;
+  box-shadow: inset 0 -2px 0 #000000;
 
-    &:hover {
-      box-shadow: inset 0 -2px 0 #62d1ba;
-    }
+  &:hover {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
 
-    &:active {
-      box-shadow: inset 0 -2px 0 #62d1ba;
-    }
+  &:active {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
 
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      height: 50px;
-      margin-left: 25px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 50px;
+    margin-left: 25px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      margin-left: 22px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: 22px;
   }
 }
 
 .form__contacts-list {
-  .form__contacts:last-child .form__contacts-label {
-    margin-top: 20px;
-  }
-
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     margin-top: 2px;
@@ -348,11 +380,11 @@ input[type="checkbox"]:checked + label::after {
     flex-grow: 0;
     padding-left: 0;
   }
+}
 
-  .form__contacts:first-child {
-    @media (min-width: $tablet-width) {
-      padding-top: 0;
-    }
+.form__contacts--name {
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
   }
 }
 
@@ -370,23 +402,33 @@ input[type="checkbox"]:checked + label::after {
   }
 }
 
-input::placeholder {
-  color: #cecece;
-  font-family: $font-family;
-  font-size: 16px;
-  padding-left: 0;
-  margin: 0;
-  font-weight: normal;
-  line-height: 18px;
+.form__contacts-label--patron {
+  margin-top: 20px;
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 19px;
-    padding-left: 10px;
+.form__control {
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+
+  &::placeholder {
+    color: #cecece;
+    font-family: $font-family;
+    font-size: 16px;
+    padding-left: 0;
+    margin: 0;
+    font-weight: normal;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      padding-left: 10px;
+    }
   }
 }
 
-input[type="tel"],
-input[type="email"] {
+.form__control--email,
+.form__control--phone {
   border: none;
   height: 57px;
   box-shadow: inset 0 -2px 0 #000000;
@@ -399,24 +441,20 @@ input[type="email"] {
   &:active {
     box-shadow: inset 0 -2px 0 #62d1ba;
   }
-}
 
-.form__name--tel,
-.form__name--email,
-.form__name--else {
-  margin-top: 33px;
-}
+  @media (min-width: $tablet-width) {
+    width: auto;
+    flex-grow: 1;
+    margin-top: 10px;
+  }
 
-.form__name--email {
-  margin-top: 31px;
-
-  &::after {
-    left: 80px;
-    width: 181px;
+  @media (min-width: $desktop-width) {
+    flex-grow: 0;
+    width: 66%;
   }
 }
 
-.form__message {
+.form__control--message {
   padding: 15px;
   box-sizing: border-box;
   width: 100%;
@@ -488,46 +526,25 @@ input[type="email"] {
   }
 }
 
-.form__field--contacts,
-.form__field--tel,
-.form__field--email,
-.form__field--else {
-  .form__name {
-    @media (min-width: $tablet-width) {
-      width: 25%;
-    }
+.form__field-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
 
-    @media (min-width: $desktop-width) {
-      width: 11%;
-    }
+    @include container;
+    flex-direction: row;
+    padding: 16px 0;
+    flex-wrap: wrap;
   }
 
-  input[type="tel"],
-  input[type="email"] {
-    @media (min-width: $tablet-width) {
-      width: auto;
-      flex-grow: 1;
-      margin-top: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      flex-grow: 0;
-      width: 66%;
-    }
+  @media (min-width: $desktop-width) {
+    padding-left: 61px;
   }
 }
 
+
 .form__field--contacts {
-  .form__name {
-    margin-top: 10px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 15px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 15px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-top: 37px;
   }
 
   .form__field-container {
@@ -538,10 +555,6 @@ input[type="email"] {
     @media (min-width: $desktop-width) {
       padding-top: 13px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 37px;
   }
 }
 
@@ -560,7 +573,7 @@ input[type="email"] {
 
 .form__field--email {
   @media (min-width: $tablet-width) {
-    background-color: #ececec;
+    background-color: #f1f1f1;
     padding: 0 50px;
   }
 
@@ -568,28 +581,6 @@ input[type="email"] {
     @media (min-width: $tablet-width) {
       padding-top: 0;
       padding-bottom: 48px;
-    }
-  }
-}
-
-.form__field-container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-
-    @include container;
-    flex-direction: row;
-    padding: 16px 0;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 61px;
-  }
-
-  & > input,
-  & > textarea {
-    @media (min-width: $desktop-width) {
-      margin-left: 0;
     }
   }
 }

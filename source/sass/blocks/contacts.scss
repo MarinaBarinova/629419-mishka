@@ -2,17 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 48px;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 102px;
-  }
 
   @media (min-width: $desktop-width) {
     position: relative;
 
     @include container;
-    padding: 163px 0 105px 13px;
+    padding: 71px 0 105px 13px;
     display: block;
   }
 }
@@ -161,7 +156,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 0;
-    top: 163px;
+    top: 71px;
     width: 525px;
     height: 457px;
     margin: 0;

@@ -71,58 +71,58 @@
         мы свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="form__field  form__field--type ">
         <div class="form__field-container">
-          <div class="form__name">Тип</div>
+          <div class="form__name form__name--type">Тип</div>
           <ul class="form__filter-list">
             <li class="form__filter ">
-              <input type="radio" name="radio" value="radiobutton" id="radio1">
-              <label class="form__label" for="radio1">Аксессуар для
+              <input type="radio"  class="form__control form__control--checkable" name="radio" value="interior" id="radio1">
+              <label class="form__label form__label--type" for="radio1">Аксессуар для
                 интерьера</label>
             </li>
             <li class="form__filter ">
-              <input type="radio" name="radio" value="radiobutton" id="radio2">
-              <label class="form__label" for="radio2">Детская игрушка</label>
+              <input type="radio" name="radio"  class="form__control form__control--checkable" value="toy" id="radio2">
+              <label class="form__label form__label--type" for="radio2">Детская игрушка</label>
             </li>
           </ul>
         </div>
       </fieldset>
       <fieldset class="form__field  form__field--color">
         <div class="form__field-container">
-          <div class="form__name">Цвет</div>
-          <ul class="form__filter-list">
-            <li class="form__filter ">
-              <input type="checkbox" name="checkbox" id="color1">
-              <label class="form__label" for="color1">Белый</label> </li>
-            <li class="form__filter ">
-              <input type="checkbox" name="checkbox" id="color2">
-              <label class="form__label" for="color2">Серый</label> </li>
-            <li class="form__filter "><input type="checkbox" name="checkbox" id="color3">
-              <label class="form__label" for="color3">"Тиффани"</label> </li>
-            <li class="form__filter ">
-              <input type="checkbox" name="checkbox" id="color4">
-              <label class="form__label" for="color4">Черный</label> </li>
-            <li class="form__filter ">
-              <input type="checkbox" name="checkbox" id="color5">
-              <label class="form__label" for="color5">Розовый</label></li>
-            <li class="form__filter "><input type="checkbox" name="checkbox" id="color6">
-              <label class="form__label" for="color6">Оранжевый</label> </li>
+          <div class="form__name form__name--color">Цвет</div>
+          <ul class="form__filter-list form__filter-list--color">
+            <li class="form__filter form__filter--color">
+              <input type="checkbox" class="form__control form__control--checkable" name="checkbox" id="color1">
+              <label class="form__label form__label--color" for="color1">Белый</label> </li>
+            <li class="form__filter form__filter--color">
+              <input type="checkbox"  class="form__control form__control--checkable" name="checkbox" id="color2">
+              <label class="form__label form__label--color" for="color2">Серый</label> </li>
+            <li class="form__filter form__filter--color"><input type="checkbox"  class="form__control form__control--checkable" name="checkbox" id="color3">
+              <label class="form__label form__label--color" for="color3">"Тиффани"</label> </li>
+            <li class="form__filter form__filter--color">
+              <input type="checkbox"  class="form__control form__control--checkable" name="checkbox" id="color4">
+              <label class="form__label form__label--color" for="color4">Черный</label> </li>
+            <li class="form__filter form__filter--color">
+              <input type="checkbox"  class="form__control form__control--checkable" name="checkbox" id="color5">
+              <label class="form__label form__label--color" for="color5">Розовый</label></li>
+            <li class="form__filter form__filter--color"><input type="checkbox"  class="form__control form__control--checkable" name="checkbox" id="color6">
+              <label class="form__label form__label--color" for="color6">Оранжевый</label> </li>
           </ul>
         </div>
       </fieldset>
       <fieldset class="form__field form__field--contacts">
         <div class="form__field-container">
-          <div class="form__name">ФИО</div>
+          <div class="form__name form__name--contacts">ФИО</div>
           <ul class="form__contacts-list">
-            <li class="form__contacts ">
+            <li class="form__contacts form__contacts--name">
               <label class="form__contacts-label" for="name">Имя:</label>
-              <input type="text" id="name" required pattern="\S+[A-Za-zА-Яа-яЁё]" placeholder=" Введите ваше имя*">
+              <input type="text" class="form__control form__control--textfield" id="name" required pattern="\S+[A-Za-zА-Яа-яЁё]" placeholder=" Введите ваше имя*">
             </li>
             <li class="form__contacts ">
               <label class="form__contacts-label" for="surname">Фамилия:</label>
-              <input type="text" id="surname" required pattern="\S+[A-Za-zА-Яа-яЁё]" placeholder=" Укажите фамилию*">
+              <input type="text" class="form__control form__control--textfield" id="surname" required pattern="\S+[A-Za-zА-Яа-яЁё]" placeholder=" Укажите фамилию*">
             </li>
             <li class="form__contacts ">
-              <label class="form__contacts-label" for="patronymic">Отчество:</label>
-              <input type="text" id="patronymic" placeholder="Отчество, если желаете">
+              <label class="form__contacts-label form__contacts-label--patron" for="patronymic">Отчество:</label>
+              <input type="text" class="form__control form__control--textfield" id="patronymic" placeholder="Отчество, если желаете">
             </li>
           </ul>
         </div>
@@ -130,19 +130,19 @@
       <fieldset class="form__field form__field--tel">
         <div class="form__field-container">
           <div class="form__name form__name--tel">ТЕЛ</div>
-          <input type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input type="tel" class="form__control form__control--phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
         </div>
       </fieldset>
       <fieldset class="form__field form__field--email">
         <div class="form__field-container">
           <div class="form__name form__name--email">E-MAIL</div>
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <input type="email" class="form__control form__control--email" name="email" placeholder="Ваш e-mail">
         </div>
       </fieldset>
       <fieldset class="form__field form__field--else">
         <div class="form__field-container">
           <div class="form__name form__name--else">ДОП</div>
-          <textarea class="form__message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea class="form__control form__control--message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <p class="form__etc">*Поля обязательны для заполнения</p>
           <button class="btn form__btn" type="submit">Отправить заказ</button>
         </div>

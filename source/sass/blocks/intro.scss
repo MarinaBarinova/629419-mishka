@@ -65,6 +65,17 @@
   }
 }
 
+.intro__item-title {
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    line-height: 21px;
+  }
+}
+
 .intro__item {
   display: flex;
   width: 77%;
@@ -77,17 +88,6 @@
 
   use {
     fill: $accent-color;
-  }
-
-  span {
-    @media (min-width: $tablet-width) {
-      padding-left: 8px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 0;
-      line-height: 21px;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -123,7 +123,7 @@
       width: 51%;
     }
 
-    span {
+    .intro__item-title {
       @media (min-width: $desktop-width) {
         padding-left: 10px;
       }
@@ -167,15 +167,6 @@
   }
 }
 
-.intro__img--heart,
-.intro__img--gift,
-.intro__img--rocket,
-.intro__img--money {
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
-  }
-}
-
 .intro__img--heart {
   padding-top: 34px;
   padding-left: 8px;
@@ -197,6 +188,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 7px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
