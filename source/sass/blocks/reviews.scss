@@ -1,14 +1,29 @@
 .reviews {
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
-    background: url("/img/review@1x.jpg") no-repeat;
-    background-color: #f7f7f7;
-    position: relative;
+  &::before {
+    @media (min-width: $tablet-width) {
+      display: block;
+      content: "";
+      background: #f7f7f7 url("/img/review@1x.jpg") no-repeat;
+      width: 350px;
+      position: absolute;
+      left: 0;
+      height: 457px;
+      z-index: -1;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/review@2x.jpg");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/review@2x.jpg");
+      }
     }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,7 +56,7 @@
 
     @media (min-width: $desktop-width) {
       height: 22px;
-
+      width: 1050px;
       background-size: 1050px 22px;
       margin-top: 70px;
       background-position-x: 28px;
@@ -66,15 +81,28 @@
     padding-right: 0;
   }
 
+  &::before {
+    @media (min-width: $desktop-width) {
+      display: block;
+      content: "";
+      background: #f7f7f7 url("/img/review@1x.jpg") no-repeat;
+      width: 350px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 457px;
+      z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/review@2x.jpg");
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0;
     padding-bottom: 65px;
-    background: #f7f7f7 url("/img/review@1x.jpg") no-repeat;
     position: relative;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("/img/review@2x.jpg");
-    }
   }
 }
 
