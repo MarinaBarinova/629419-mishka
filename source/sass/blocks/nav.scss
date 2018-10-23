@@ -1,16 +1,20 @@
 .nav {
   position: relative;
 
+  @include container;
+
   @media (min-width: $tablet-width) {
-    @include container;
+
     margin: -5px auto;
-    padding-left: 16px;
+    padding-left: 12px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     margin: 0;
-    width: auto;
-    padding-left: 0;
+    max-width: 100%;
+    padding: 0;
+    background: #f9f9f9;
   }
 }
 
@@ -24,6 +28,9 @@
 
   @media (min-width: $desktop-width) {
     @include container;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
   }
 }
 
@@ -31,6 +38,8 @@
   height: 104px;
   display: flex;
   justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 25px;
 
 
   @media (min-width: $tablet-width) {
@@ -47,7 +56,7 @@
   }
 
   svg {
-    padding-right: 4px;
+    padding-right: 10px;
 
     @media (min-width: $tablet-width) {
       padding-right: 0;

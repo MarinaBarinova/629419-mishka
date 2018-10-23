@@ -1,4 +1,6 @@
 .reviews {
+  box-sizing: border-box;
+
   @media (min-width: $tablet-width) {
     background: url("/img/review@1x.jpg") no-repeat;
     position: relative;
@@ -8,11 +10,19 @@
     }
   }
 
+  @media (min-width: $desktop-width) {
+    background: none;
+    padding-left: 14px;
+
+    @include container;
+  }
+
   &::after {
+
     margin-top: 43px;
     content: "";
     display: block;
-    width: 100%;
+
     height: 6px;
     background-image: url("/img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
@@ -30,9 +40,9 @@
 
     @media (min-width: $desktop-width) {
       height: 22px;
-      width: 1050px;
+
       background-size: 1050px 22px;
-      margin-top: 136px;
+      margin-top: 70px;
       background-position-x: 28px;
       opacity: 1;
     }
@@ -41,6 +51,8 @@
 
 .reviews__wrapper {
   @include container;
+  padding: 0 30px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 
@@ -49,11 +61,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 4px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
+    padding-bottom: 65px;
+    background: url("/img/review@1x.jpg") no-repeat;
+    position: relative;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/review@2x.jpg");
+    }
   }
 }
 
@@ -154,7 +174,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 171px;
+    width: 165px;
     margin: 0;
     order: 5;
     padding-top: 31px;
@@ -172,8 +192,9 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
-    margin-top: 33px;
+    margin-top: 27px;
     padding-left: 10px;
+    padding-right: 2px;
     order: 2;
   }
 
@@ -181,6 +202,7 @@
     width: 173px;
     margin-top: 33px;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -229,6 +251,7 @@
   @media (min-width: $desktop-width) {
     width: 75%;
     padding-top: 0;
+
 
     @include index-content-margins;
   }

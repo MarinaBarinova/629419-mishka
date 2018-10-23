@@ -1,38 +1,5 @@
 .weekly-product {
-  @media (min-width: $tablet-width) {
-
-    padding: 0;
-    margin-top: -119px;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include container;
-    padding: 0 50px;
-    margin-top: -119px;
-  }
-}
-
-.weekly-product__container {
-  @include container;
-  background: $background-color;
   position: relative;
-  padding: 0 30px;
-  padding-bottom: 5px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin: 0;
-    width: auto;
-    margin-top: 60px;
-    padding-left: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: none;
-    width: auto;
-    margin-top: 72px;
-    padding-left: 0;
-  }
 
   &::after {
     content: "";
@@ -64,10 +31,35 @@
 
     @media (min-width: $desktop-width) {
       height: 25px;
-      width: 1050px;
       background-size: 1050px 22px;
       background-position-x: 26px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container;
+  }
+}
+
+.weekly-product__container {
+  @include container;
+  background: $background-color;
+  position: relative;
+  padding: 0 30px;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 5px;
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+    width: auto;
+    margin-top: 72px;
+    padding-left: 0;
   }
 }
 
@@ -80,7 +72,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
-    padding-left: 15px;
+    padding: 0;
     margin: 0;
     padding-top: 3px;
   }
@@ -107,7 +99,7 @@
     margin: 0;
     width: 80px;
     text-align: center;
-    padding-right: 60px;
+    padding-right: 15px;
     padding-top: 2px;
   }
 
@@ -135,7 +127,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 48px;
-    padding-left: 30px;
+    padding-left: 37px;
   }
 }
 
@@ -152,7 +144,6 @@
     font-size: 17px;
     padding: 0;
 
-    margin-left: 17px;
     line-height: 30px;
     letter-spacing: 0.3px;
   }
@@ -180,15 +171,12 @@
     margin-top: 37px;
     margin-bottom: 57px;
     font-size: 15px;
-
-    margin-left: 17px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 15px;
     margin-top: 50px;
     margin-bottom: 114px;
-    margin-left: 0;
   }
 
   td {
@@ -223,7 +211,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 36px;
+    right: 0;
     top: 74px;
     width: 333px;
     height: 404px;
@@ -246,10 +234,12 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-right: 7px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    padding-right: 0;
   }
 
   button {
@@ -286,7 +276,13 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     width: 292px;
+    margin-top: 38px;
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-top: 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -300,7 +296,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 173px;
+    margin-left: 182px;
     width: 29%;
     margin-top: 42px;
     padding-bottom: 100px;

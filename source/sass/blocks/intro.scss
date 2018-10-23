@@ -1,8 +1,11 @@
 .intro {
   @include container;
   margin-top: 26px;
+  padding: 0 30px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     margin-top: 56px;
   }
 
@@ -14,7 +17,7 @@
 
 .intro__wrapper {
   @media (min-width: $desktop-width) {
-    margin-left: 170px;
+    margin-left: 178px;
   }
 }
 
