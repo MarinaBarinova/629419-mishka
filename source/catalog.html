@@ -82,7 +82,7 @@
           <p class="catalog-item__features">Рост 30 см, вес 200 г</p>
           <div class="catalog-item__buy">
             <span class="catalog-item__price">1 200 руб.</span>
-            <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
+            <a href="#"><svg class="catalog-item__buy-icon js-popup" width="20" height="20">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
           </div>
@@ -105,7 +105,7 @@
           <p class="catalog-item__features">Диаметр 15 см, высота 10 см</p>
           <div class="catalog-item__buy">
             <span class="catalog-item__price">690 руб.</span>
-            <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
+            <a href="#"><svg class="catalog-item__buy-icon js-popup" width="20" height="20">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
           </div>
@@ -128,7 +128,7 @@
           <p class="catalog-item__features catalog-item__features--big-name">Диаметр 30 см, высота 30 см</p>
           <div class="catalog-item__buy">
             <span class="catalog-item__price">1 500 руб.</span>
-            <a href="#"><svg class="catalog-item__buy-icon" width="20" height="20">
+            <a href="#"><svg class="catalog-item__buy-icon js-popup" width="20" height="20">
                 <use xlink:href="#icon-cart"></use>
               </svg></a>
           </div>
@@ -185,7 +185,21 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__content">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <h4 class="modal__subtitle">Выберите размер: </h4>
+        <ul class="modal__size-selector">
+          <li class="modal__size-option modal__size-option--active"><span>S</span></li>
+          <li class="modal__size-option"><span>M</span></li>
+          <li class="modal__size-option"><span>L</span></li>
+        </ul>
+        <a href="#" class="btn modal__btn"><span class="modal__btn-label">Добавить</span></a>
+      </div>
+    </div>
 </body>
 <script src="js/menu.js"></script>
+<script src="js/popup.js"></script>
 
 </html>
