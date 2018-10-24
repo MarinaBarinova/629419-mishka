@@ -45,6 +45,11 @@
   }
 }
 
+.catalog-item__name-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 .catalog-item__description {
   height: 151px;
   background-color: $background-color;
@@ -72,6 +77,15 @@
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 14px;
+  }
+
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

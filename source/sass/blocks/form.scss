@@ -331,6 +331,10 @@
   display: block;
 }
 
+.form__control--checkable:disabled + label::before {
+  border: 2px solid #cacaca;
+}
+
 
 .form__contacts {
   display: flex;

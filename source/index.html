@@ -24,6 +24,8 @@
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка">
         </picture>
       </a>
+      <!--Класс main-nav--nojs переключает режим работы меню.
+      Класс main-nav--opened отвечает за открытое состояние меню, main-nav--closed - за закрытое -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -122,7 +124,7 @@
           </div>
           <div class="weekly-product__buy">
             <p class="weekly-product__price">Цена: 990 руб.</p>
-            <button class="weekly-product__order btn js-popup">Заказать</button>
+            <a href="product-order.html" class="js-popup"><button class="weekly-product__order btn">Заказать</button>
           </div>
         </div>
       </div>
