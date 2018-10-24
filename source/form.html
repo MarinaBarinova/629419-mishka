@@ -134,20 +134,31 @@
       </fieldset>
       <fieldset class="form__field form__field--tel">
         <div class="form__field-container">
-          <div class="form__name form__name--tel">ТЕЛ</div>
-          <input type="tel" class="form__control form__control--phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <label class="form__name form__name--tel" for="phone" >
+            <span>ТЕЛ</span>
+            <input type="tel" class="form__control form__control--phone" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+            <svg class="form__name--tel-icon">
+                <use class="form__field-icon form__field-icon--fill" xlink:href="#icon-phone"></use>
+              </svg>
+          </label>
+
         </div>
       </fieldset>
       <fieldset class="form__field form__field--email">
         <div class="form__field-container">
-          <div class="form__name form__name--email">E-MAIL</div>
-          <input type="email" class="form__control form__control--email" name="email" placeholder="Ваш e-mail">
+          <label class="form__name form__name--email" for="email"><span>E-MAIL</span>
+            <input type="email" class="form__control form__control--email" id="email" name="email" placeholder="Ваш e-mail">
+            <svg class="form__name--email-icon">
+                <use class="form__field-icon form__field-icon--fill" xlink:href="#icon-mail"></use>
+              </svg>
+          </label>
+
         </div>
       </fieldset>
       <fieldset class="form__field form__field--else">
         <div class="form__field-container">
-          <div class="form__name form__name--else">ДОП</div>
-          <textarea class="form__control form__control--message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="form__name form__name--else" for="else">ДОП</label>
+          <textarea class="form__control form__control--message" id="else" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           <p class="form__etc">*Поля обязательны для заполнения</p>
           <button class="btn form__btn" type="submit">Отправить заказ</button>
         </div>

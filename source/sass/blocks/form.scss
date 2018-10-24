@@ -132,22 +132,81 @@
 
 .form__name--email {
   margin-top: 31px;
+}
 
-  &::after {
-    left: 80px;
-    width: 181px;
+.form__name--email,
+.form__name--tel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  span {
+    @media (min-width: $tablet-width) {
+      padding-top: 33px;
+      width: 164px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 115px;
+    }
+  }
+}
+
+.form__name--email::after {
+  left: 81px;
+  width: 180px;
+}
+
+.form__name--email-icon,
+.form__name--tel-icon {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 33px;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    right: 25px;
+    top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 240px;
+  }
+
+  use {
+    fill: #333333;
+  }
+}
+
+.form__name--tel-icon {
+  width: 25px;
+  height: 25px;
 }
 
 .form__name--contacts {
   margin-top: 10px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 15px;
+    margin-top: 28px;
   }
 }
 
@@ -218,7 +277,7 @@
 
 .form__filter--color:nth-child(even) {
   @media (min-width: $tablet-width) {
-    width: 47%;
+    width: 46%;
   }
 
   @media (min-width: $desktop-width) {
@@ -296,8 +355,12 @@
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 0 0 80px;
+    padding: 17px 0 0 84px;
     line-height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
   }
 }
 
@@ -343,27 +406,19 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     width: 100%;
-    padding-top: 25px;
+    padding-top: 24px;
   }
 }
 
 .form__control--textfield {
   border: none;
-  height: 55px;
+  height: 50px;
   padding: 0;
+  margin-top: 5px;
   box-shadow: inset 0 -2px 0 #000000;
-
-  &:hover {
-    box-shadow: inset 0 -2px 0 #62d1ba;
-  }
-
-  &:active {
-    box-shadow: inset 0 -2px 0 #62d1ba;
-  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    height: 50px;
     margin-left: 25px;
   }
 
@@ -390,6 +445,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
+  }
 }
 
 .form__contacts-label {
@@ -401,7 +460,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    margin-top: 17px;
+    margin-top: 25px;
     line-height: 11px;
   }
 }
@@ -410,9 +469,33 @@
   margin-top: 20px;
 }
 
+.form__contacts-label--patron + .form__control--textfield {
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
+  }
+}
+
 .form__control {
+  box-sizing: border-box;
+  padding-left: 0;
+  background: none;
+  font-size: 19px;
+
+  &:hover {
+    box-shadow: inset 0 -2px 0 $accent-color;
+  }
+
+  &:active {
+    box-shadow: inset 0 -2px 0 $accent-color;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-left: 0;
+    margin-left: 25px;
   }
 
   &::placeholder {
@@ -421,40 +504,45 @@
     font-size: 16px;
     padding-left: 0;
     margin: 0;
+    letter-spacing: 0.7px;
     font-weight: normal;
     line-height: 18px;
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
-      padding-left: 10px;
     }
   }
 }
 
 .form__control--email,
 .form__control--phone {
+  position: relative;
   border: none;
   height: 57px;
+  padding-right: 40px;
   box-shadow: inset 0 -2px 0 #000000;
   width: 100%;
 
-  &:hover {
-    box-shadow: inset 0 -2px 0 #62d1ba;
-  }
 
-  &:active {
-    box-shadow: inset 0 -2px 0 #62d1ba;
+  &:hover ~ svg > .form__field-icon--fill,
+  &:active ~ svg > .form__field-icon--fill {
+    fill: $accent-color;
+    opacity: 1;
   }
 
   @media (min-width: $tablet-width) {
     width: auto;
     flex-grow: 1;
     margin-top: 10px;
+    padding-left: 17px;
+    background: none;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 0;
-    width: 66%;
+    margin-left: 0;
+    padding-left: 10px;
+    width: 700px;
   }
 }
 
@@ -462,17 +550,17 @@
   padding: 15px;
   box-sizing: border-box;
   width: 100%;
-  margin-top: 24px;
+  margin-top: 19px;
   height: 142px;
   border: 2px solid $text-color;
   background-color: $background-color;
 
   &:hover {
-    border: 2px solid #62d1ba;
+    border: 2px solid $accent-color;
   }
 
   &:active {
-    border: 2px solid #62d1ba;
+    border: 2px solid $accent-color;
   }
 
   @media (min-width: $tablet-width) {
@@ -482,8 +570,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 66%;
+    width: 700px;
     flex-grow: 0;
+    margin-left: 0;
   }
 
   &::placeholder {
@@ -492,7 +581,12 @@
     font-size: 18px;
     font-weight: normal;
     line-height: 18px;
+    letter-spacing: 0.5px;
   }
+}
+
+.form__control--phone::placeholder {
+  letter-spacing: 1.3px;
 }
 
 .form__etc {
@@ -521,7 +615,7 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin-top: 55px;
+    margin-top: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -553,11 +647,7 @@
 
   .form__field-container {
     @media (min-width: $tablet-width) {
-      padding-top: 10px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 13px;
+      padding-top: 0;
     }
   }
 }
@@ -569,7 +659,7 @@
 
   .form__field-container {
     @media (min-width: $tablet-width) {
-      padding-top: 32px;
+      padding-top: 35px;
       padding-bottom: 8px;
     }
   }
@@ -590,6 +680,8 @@
 }
 
 .form__field--else {
+  margin-top: 35px;
+
   @media (min-width: $tablet-width) {
     margin-top: 19px;
   }
