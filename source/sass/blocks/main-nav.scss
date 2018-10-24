@@ -107,7 +107,6 @@
       display: block;
     }
   }
-
 }
 
 @media (max-width: $mobile-width-only) {
@@ -135,10 +134,7 @@
   .main-nav--nojs .main-nav__uitem {
     display: block;
   }
-
 }
-
-
 
 .main-nav__list {
   @include list-style-reset;
