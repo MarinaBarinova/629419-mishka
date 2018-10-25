@@ -22,7 +22,7 @@
   @include container;
   padding: 37px 29px 47px 29px;
   box-sizing: border-box;
-  height: 336px;
+  min-height: 336px;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
   background: $background-color;
@@ -43,6 +43,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .modal__title {
@@ -96,7 +98,7 @@
 
 .modal__size-option {
   width: 78px;
-  height: 52px;
+  min-height: 52px;
   border: 2px solid $text-color;
   background-color: $background-color;
   opacity: 0.1;
@@ -115,6 +117,7 @@
     text-align: center;
     display: inline-block;
     width: 100%;
+    line-height: 52px;
   }
 
   @media (min-width: $tablet-width) {
@@ -125,9 +128,11 @@
     opacity: 0.3;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 1;
     border: 2px solid $accent-color;
+    outline: none;
   }
 }
 
@@ -155,7 +160,7 @@
   left: -2px;
   top: -2px;
   width: 260px;
-  height: 54px;
+  min-height: 54px;
   background-color: $accent-color;
   color: $background-color;
   font-family: $font-family;
@@ -173,7 +178,9 @@
     opacity: 0.9;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.7;
+    outline: none;
   }
 }

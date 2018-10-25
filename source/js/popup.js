@@ -1,6 +1,3 @@
-let modal = document.querySelector(".modal");
-let buyBtns = document.querySelectorAll(".js-popup");
-
 function toggleModal(event) {
   if (event.target !== modal) {
     event.preventDefault();
@@ -14,5 +11,9 @@ function windowOnClick(event) {
   }
 }
 
-buyBtns.forEach((btn)=> { btn.addEventListener("click", toggleModal)});
 window.addEventListener("click", windowOnClick);
+let modal = document.querySelector(".modal");
+let buyBtns = document.querySelectorAll(".js-popup");
+for(let i=0;i<buyBtns.length;i++) {
+  buyBtns[i].addEventListener("click", toggleModal);
+}

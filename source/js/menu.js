@@ -1,7 +1,7 @@
 let navMain = document.querySelector(".main-nav");
 let navToggle = document.querySelector(".main-nav__toggle");
 //navMain.classList.remove("main-nav--nojs");
-if(navMain.classList.contains("main-nav--nojs")) {
+if (navMain.classList.contains("main-nav--nojs")) {
   navMain.classList.remove("main-nav--nojs");
   hideMenu();
 }

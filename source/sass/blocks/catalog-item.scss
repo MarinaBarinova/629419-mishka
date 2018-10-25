@@ -6,23 +6,28 @@
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
     @include container;
     display: flex;
-    margin-top: 51px;
+    margin-top: 48px;
     margin-left: 6px;
+    align-items: stretch;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    width: 31%;
+    min-width: 30%;
+
     margin-right: 50px;
+    margin-top: 51px;
     margin-left: 0;
-    padding-bottom: 44px;
+    padding-bottom: 0;
   }
 
   &:last-child {
@@ -32,16 +37,23 @@
   }
 
   picture {
+
+    background-color: #f1f1f1;
     box-sizing: border-box;
-    height: 195px;
+    min-height: 195px;
 
     @media (min-width: $tablet-width) {
-      height: 334px;
+      min-height: 334px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 462px;
+      min-height: 462px;
     }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -51,15 +63,19 @@
 }
 
 .catalog-item__description {
-  height: 151px;
+  min-height: 151px;
   background-color: $background-color;
   padding-left: 28px;
   padding-right: 25px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 50%;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -84,8 +100,10 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
+    outline: none;
   }
 }
 
@@ -125,21 +143,18 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 68px;
+  padding-top: 17px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
   justify-content: space-between;
-
-  @media (min-width: $desktop-width) {
-    height: auto;
-    padding-top: 19px;
-  }
 }
 
 .catalog-item__description--big {
-  height: 176px;
+  min-height: 176px;
 
   .catalog-item__name {
     @media (min-width: $tablet-width) {
-      padding-right: 67px;
+      padding-right: 65px;
     }
   }
 }
@@ -166,8 +181,10 @@
       fill: $accent-color;
     }
 
-    &:active {
+    &:active,
+    &:focus {
       opacity: 0.3;
+      outline: none;
     }
   }
 }

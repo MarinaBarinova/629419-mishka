@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <link href="/css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.min.css">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
+  <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -15,12 +17,15 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="/" class="page-header__logo-container">
+        <span class="visually-hidden">Логотип. Переход на главную страницу</span>
         <picture>
-          <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <source media="(min-width:1150px)" srcset="/img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка">
         </picture>
       </a>
+      <!--Класс main-nav&ndash;&ndash;nojs переключает режим работы меню.
+      Класс main-nav&ndash;&ndash;opened отвечает за открытое состояние меню, main-nav&ndash;&ndash;closed - за закрытое -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -49,8 +54,7 @@
               <a class="main-nav__uitem-link main-nav__uitem-link--cart" href="#"><svg class="main-nav__uitem-icon"
                   width="17" height="17">
                   <use xlink:href="#icon-cart"></use>
-                </svg><span>Корзина: пока
-                  пуста</span></a>
+                </svg><span>Корзина: пока пуста</span></a>
             </li>
           </ul>
         </div>
@@ -63,7 +67,6 @@
         <h2 class="page-header__title ">Вязание на заказ</h2>
       </div>
     </div>
-
   </header>
   <main class="form-container">
 
@@ -98,7 +101,7 @@
               <label class="form__label form__label--color" for="color2">Серый</label> </li>
             <li class="form__filter form__filter--color"><input type="checkbox" class="form__control form__control--checkable"
                 name="checkbox" id="color3">
-              <label class="form__label form__label--color" for="color3">"Тиффани"</label> </li>
+              <label class="form__label form__label--color" for="color3">&laquo;Тиффани&raquo;</label> </li>
             <li class="form__filter form__filter--color">
               <input type="checkbox" class="form__control form__control--checkable" name="checkbox" id="color4">
               <label class="form__label form__label--color" for="color4">Черный</label> </li>
@@ -134,12 +137,12 @@
       </fieldset>
       <fieldset class="form__field form__field--tel">
         <div class="form__field-container">
-          <label class="form__name form__name--tel" for="phone" >
+          <label class="form__name form__name--tel" for="phone">
             <span>ТЕЛ</span>
             <input type="tel" class="form__control form__control--phone" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            <svg class="form__name--tel-icon">
-                <use class="form__field-icon form__field-icon--fill" xlink:href="#icon-phone"></use>
-              </svg>
+            <svg class="form__name--tel-icon" width="25" height="25">
+              <use class="form__field-icon form__field-icon--fill" xlink:href="#icon-phone"></use>
+            </svg>
           </label>
 
         </div>
@@ -148,9 +151,9 @@
         <div class="form__field-container">
           <label class="form__name form__name--email" for="email"><span>E-MAIL</span>
             <input type="email" class="form__control form__control--email" id="email" name="email" placeholder="Ваш e-mail">
-            <svg class="form__name--email-icon">
-                <use class="form__field-icon form__field-icon--fill" xlink:href="#icon-mail"></use>
-              </svg>
+            <svg class="form__name--email-icon" width="32" height="32">
+              <use class="form__field-icon form__field-icon--fill" xlink:href="#icon-mail"></use>
+            </svg>
           </label>
 
         </div>
@@ -167,29 +170,34 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <svg class="page-footer__logo" width="102" height="34">
-        <use xlink:href="#logo-footer"></use>
-      </svg>
+      <a href="#" class="page-footer__logo"><svg width="102" height="34">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
+        <span class="visually-hidden">Логотип. Переход на главную страницу</span></a>
       <ul class="page-footer__social">
-        <li class="page-footer__social-item "><svg class="page-footer__social-link--insta" width="22" height="21">
-            <use xlink:href="#icon-insta"></use>
-          </svg></li>
-        <li class="page-footer__social-item"><svg class="page-footer__social-link--fb" width="15" height="28">
-            <use xlink:href="#icon-fb"></use>
-          </svg></li>
-        <li class="page-footer__social-item"><svg class="page-footer__social-link--twitter" width="23" height="22">
-            <use xlink:href="#icon-twitter"></use>
-          </svg></li>
+        <li class="visually-hidden">Переход на страницу соцсетей</li>
+        <li class="page-footer__social-item "><a href="#" class="page-footer__social-link--insta"><svg width="22"
+              height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg></a></li>
+        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link--fb"><svg width="15" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg></a></li>
+        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link--twitter"><svg width="23"
+              height="22">
+              <use xlink:href="#icon-twitter"></use>
+            </svg></a></li>
       </ul>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a href="https://htmlacademy.ru"><svg class="page-footer__copyright-logo" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo"><svg width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg></a>
       </div>
     </div>
   </footer>
+  <script src="js/menu.js"></script>
+  <script src="js/picturefill.min.js" async></script>
 </body>
-<script src="js/menu.js"></script>
 
 </html>

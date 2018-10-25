@@ -8,7 +8,6 @@
   <link rel="preload" href="/fonts/opensans.woff2" as="font">
   <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
 </head>
 
 <body>
@@ -18,14 +17,15 @@
   <header class="page-header">
     <div class="page-header__container">
       <a href="/" class="page-header__logo-container">
+        <span class="visually-hidden">Логотип. Переход на главную страницу</span>
         <picture>
           <source media="(min-width:1150px)" srcset="/img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
           <img class="page-header__logo-image" src="/img/logo-mobile.svg" alt="Мишка">
         </picture>
       </a>
-      <!--Класс main-nav--nojs переключает режим работы меню.
-      Класс main-nav--opened отвечает за открытое состояние меню, main-nav--closed - за закрытое -->
+      <!--Класс main-nav&ndash;&ndash;nojs переключает режим работы меню.
+      Класс main-nav&ndash;&ndash;opened отвечает за открытое состояние меню, main-nav&ndash;&ndash;closed - за закрытое -->
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -54,8 +54,7 @@
               <a class="main-nav__uitem-link main-nav__uitem-link--cart" href="#"><svg class="main-nav__uitem-icon"
                   width="17" height="17">
                   <use xlink:href="#icon-cart"></use>
-                </svg><span>Корзина: пока
-                  пуста</span></a>
+                </svg><span>Корзина: пока пуста</span></a>
             </li>
           </ul>
         </div>
@@ -63,7 +62,6 @@
       <span class="page-header__delivery">Бесплатная доставка по России </span>
 
     </div>
-
     <div class="page-header__block page-header__block--main">
       <div class="page-header__block-container">
         <h2 class="page-header__title">Милые штуки <span>ручной </span>работы для дома</h2>
@@ -71,16 +69,18 @@
     </div>
   </header>
   <main class="main-content">
-    <!-- <h1 class="visually-hidden">Магазин "Мишка"</h1>-->
+    <h1 class="visually-hidden">Магазин "Мишка"</h1>
     <nav class="nav">
       <ul class="nav__list">
-        <li class=" nav__item nav__item--interior ">
-          <a href="interior.html"><span class="nav__item-text">Предметы интерьера</span><svg width="40" height="62">
+        <li>
+          <a href="interior.html" class=" nav__item nav__item--interior "><span class="nav__item-text">Предметы
+              интерьера</span><svg width="40" height="62">
               <use xlink:href="#icon-interior"></use>
             </svg></a>
         </li>
-        <li class=" nav__item nav__item--toys">
-          <a href="toys.html"><span class="nav__item-text">Детские игрушки</span><svg width="60" height="59">
+        <li>
+          <a href="toys.html" class=" nav__item nav__item--toys"><span class="nav__item-text">Детские игрушки</span><svg
+              width="60" height="59">
               <use xlink:href="#icon-toy"></use>
             </svg></a>
         </li>
@@ -100,7 +100,7 @@
           <table class="weekly-product__table">
             <tr>
               <td>Цвет:</td>
-              <td>"Тиффани"/Серый</td>
+              <td>&laquo;Тиффани&raquo;/Серый</td>
             </tr>
             <tr>
               <td>Диаметр:</td>
@@ -124,7 +124,7 @@
           </div>
           <div class="weekly-product__buy">
             <p class="weekly-product__price">Цена: 990 руб.</p>
-            <a href="product-order.html" class="js-popup"><button class="weekly-product__order btn">Заказать</button>
+            <a href="product-order.html" class="weekly-product__order btn js-popup">Заказать</a>
           </div>
         </div>
       </div>
@@ -204,7 +204,7 @@
       </div>
       <div class="contacts__map-container">
         <iframe class="contacts__map contacts__map--nojs" src="https://yandex.ru/map-widget/v1/?um=constructor%3A021d97d19f6e7b9242db36c5e56495f20ec98c7e817a38838f3b0b3a77455c22&amp;source=constructor"
-          width="100%" height="457" frameborder="0"></iframe>
+          width="600" height="457"></iframe>
 
 
       </div>
@@ -214,23 +214,27 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <svg class="page-footer__logo" width="102" height="34">
-        <use xlink:href="#logo-footer"></use>
-      </svg>
+      <a href="#" class="page-footer__logo"><svg width="102" height="34">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
+        <span class="visually-hidden">Логотип. Переход на главную страницу</span></a>
       <ul class="page-footer__social">
-        <li class="page-footer__social-item "><svg class="page-footer__social-link--insta" width="22" height="21">
-            <use xlink:href="#icon-insta"></use>
-          </svg></li>
-        <li class="page-footer__social-item"><svg class="page-footer__social-link--fb" width="15" height="28">
-            <use xlink:href="#icon-fb"></use>
-          </svg></li>
-        <li class="page-footer__social-item"><svg class="page-footer__social-link--twitter" width="23" height="22">
-            <use xlink:href="#icon-twitter"></use>
-          </svg></li>
+        <li class="visually-hidden">Переход на страницу соцсетей</li>
+        <li class="page-footer__social-item "><a href="#" class="page-footer__social-link--insta"><svg width="22"
+              height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg></a></li>
+        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link--fb"><svg width="15" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg></a></li>
+        <li class="page-footer__social-item"><a href="#" class="page-footer__social-link--twitter"><svg width="23"
+              height="22">
+              <use xlink:href="#icon-twitter"></use>
+            </svg></a></li>
       </ul>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><svg class="page-footer__copyright-logo" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-logo"><svg width="27" height="34">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg></a>
       </div>
@@ -246,11 +250,13 @@
           <li class="modal__size-option"><span>M</span></li>
           <li class="modal__size-option"><span>L</span></li>
         </ul>
-        <a href="#" class="btn modal__btn"><span class="modal__btn-label">Добавить</span></a>
+        <a href="#" class="btn modal__btn "><span class="modal__btn-label">Добавить</span></a>
       </div>
     </div>
+  </div>
+  <script src="js/menu.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/picturefill.min.js" async></script>
 </body>
-<script src="js/menu.js"></script>
-<script src="js/popup.js"></script>
 
 </html>

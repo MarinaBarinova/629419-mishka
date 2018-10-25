@@ -118,28 +118,29 @@
 }
 
 .form__name--color {
-  margin-top: 20px;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     margin-top: 52px;
   }
 }
 
-.form__name--tel,
+.form__name--tel {
+  margin-top: 31px;
+}
+
+.form__name--email,
 .form__name--else {
   margin-top: 33px;
 }
 
-.form__name--email {
-  margin-top: 31px;
-}
 
 .form__name--email,
 .form__name--tel {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
+
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -175,8 +176,6 @@
   right: 5px;
   top: 33px;
   bottom: 0;
-  width: 32px;
-  height: 32px;
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {
@@ -193,13 +192,9 @@
   }
 }
 
-.form__name--tel-icon {
-  width: 25px;
-  height: 25px;
-}
-
 .form__name--contacts {
   margin-top: 10px;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     margin-top: 25px;
@@ -212,7 +207,7 @@
 
 .form__filter-list {
   @include list-style-reset;
-  margin-top: 16px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;
@@ -251,7 +246,6 @@
 }
 
 .form__filter {
-  height: 61px;
   display: flex;
   position: relative;
 
@@ -263,6 +257,14 @@
 .form__filter input[type="radio"],
 .form__filter input[type="checkbox"] {
   display: none;
+}
+
+.form__filter--color {
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
 }
 
 .form__filter--color:nth-child(odd) {
@@ -291,12 +293,12 @@
   font-size: 17px;
   font-weight: 700;
   margin: 0;
-  line-height: 18px;
-  padding: 19px 0 11px 62px;
+  line-height: 17px;
+  padding: 15px 0 11px 62px;
 
   @media (min-width: $tablet-width) {
 
-    padding: 25px 0 11px 84px;
+    padding: 29px 0 17px 84px;
     letter-spacing: 1.4px;
   }
 
@@ -327,8 +329,10 @@
     border: 2px solid $accent-color;
   }
 
-  &:active::before {
+  &:active::before,
+  &:focus::before {
     border: 2px solid #cacaca;
+    outline: none;
   }
 
   &::after {
@@ -338,7 +342,7 @@
     height: 16px;
     left: 14px;
     top: 21px;
-    background-color: #63d1bb;
+    background-color: $accent-color;
     border-radius: 50%;
     display: none;
 
@@ -366,7 +370,7 @@
 
 .form__label--type::before {
   border-radius: 50%;
-  top: 10px;
+  top: 8px;
 
   @media (min-width: $tablet-width) {
     top: 10px;
@@ -412,9 +416,10 @@
 
 .form__control--textfield {
   border: none;
-  height: 50px;
   padding: 0;
-  margin-top: 5px;
+  margin-top: 3px;
+  min-height: 50px;
+  line-height: 50px;
   box-shadow: inset 0 -2px 0 #000000;
 
   @media (min-width: $tablet-width) {
@@ -452,17 +457,20 @@
 }
 
 .form__contacts-label {
-  margin-top: 30px;
+  margin-top: 22px;
   font-family: $font-family;
   font-size: 16px;
   font-weight: 700;
-  line-height: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
     margin-top: 25px;
     line-height: 11px;
   }
+}
+
+.form__contacts--name .form__contacts-label {
+  margin-top: 25px;
 }
 
 .form__contacts-label--patron {
@@ -485,8 +493,10 @@
     box-shadow: inset 0 -2px 0 $accent-color;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: inset 0 -2px 0 $accent-color;
+    outline: none;
   }
 
 
@@ -506,7 +516,6 @@
     margin: 0;
     letter-spacing: 0.7px;
     font-weight: normal;
-    line-height: 18px;
 
     @media (min-width: $tablet-width) {
       font-size: 19px;
@@ -525,9 +534,11 @@
 
 
   &:hover ~ svg > .form__field-icon--fill,
-  &:active ~ svg > .form__field-icon--fill {
+  &:active ~ svg > .form__field-icon--fill,
+  &:focus ~ svg > .form__field-icon--fill {
     fill: $accent-color;
     opacity: 1;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -551,7 +562,7 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 19px;
-  height: 142px;
+  min-height: 142px;
   border: 2px solid $text-color;
   background-color: $background-color;
 
@@ -559,8 +570,10 @@
     border: 2px solid $accent-color;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border: 2px solid $accent-color;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -615,7 +628,8 @@
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin-top: 53px;
+    margin-top: 55px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -642,8 +656,13 @@
 
 .form__field--contacts {
   @media (min-width: $tablet-width) {
-    margin-top: 37px;
+    margin-top: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 39px;
+  }
+
 
   .form__field-container {
     @media (min-width: $tablet-width) {
@@ -692,7 +711,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      justify-content: initial;
+      justify-content: flex-start;
     }
   }
 }

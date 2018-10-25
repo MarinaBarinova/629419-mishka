@@ -12,7 +12,6 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  min-height: 57px;
   border-bottom: 1px solid #ececec;
 
   @include container;
@@ -20,7 +19,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 16px;
     padding-right: 0;
-    padding-bottom: 21px;
+    padding-bottom: 28px;
     border-bottom: none;
   }
 
@@ -35,11 +34,21 @@
   text-align: center;
   padding-bottom: 19px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0;
     position: absolute;
-    height: 50px;
+    min-height: 50px;
     top: 22px;
     left: 13px;
     z-index: 3;
@@ -53,25 +62,17 @@
 
 .page-header__logo-image {
   top: 30px;
-  width: 86px;
-  height: 35px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  min-width: 86px;
+  min-height: 35px;
 
   @media (min-width: $tablet-width) {
-    width: 113px;
-    height: 46px;
+    min-width: 113px;
+    min-height: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 149px;
-    height: 72px;
+    min-width: 149px;
+    min-height: 72px;
   }
 }
 
@@ -92,7 +93,7 @@
     content: "";
     z-index: -1;
     width: 100%;
-    height: 281px;
+    min-height: 281px;
     background-image: url("/img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-color: #f9f9f9;
@@ -106,7 +107,7 @@
       background-image: url("/img/hero-tablet@1x.jpg");
       background-repeat: no-repeat;
       background-position: top;
-      height: 630px;
+      min-height: 630px;
       left: 7px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -173,15 +174,27 @@
       background-position-x: 15px;
     }
   }
+
+  .page-header__title {
+    padding-bottom: 122px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 380px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 360px;
+    }
+  }
 }
 
 .page-header__title {
   padding-top: 69px;
+  padding-bottom: 77px;
   font-weight: 700;
   font-family: $font-family;
   font-size: 27px;
   line-height: 30px;
-  height: 212px;
 
   @include container;
 
@@ -198,7 +211,6 @@
     padding-left: 15px;
     margin: 0 auto;
     width: 600px;
-    height: 480px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -209,7 +221,6 @@
     padding-left: 13px;
 
     padding-right: 0;
-    height: 474px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -220,8 +231,6 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-
-  height: 175px;
   background-color: #f1f1f1;
 
   .page-header__block-container {
@@ -231,36 +240,30 @@
       display: none;
     }
 
-    @media (min-width: $tablet-width) {
-      height: 190px;
-    }
-
     @media (min-width: $desktop-width) {
       border-top: 0;
-      height: 292px;
     }
   }
 
   .page-header__title {
-    height: auto;
     margin: auto;
 
     @media (min-width: $tablet-width) {
 
       padding-top: 95px;
-
+      padding-bottom: 38px;
       padding-left: 15px;
     }
 
     @media (min-width: $desktop-width) {
       border-top: none;
       padding-top: 172px;
-      padding-left: 0;
+      padding-left: 15px;
+      padding-bottom: 56px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    height: 225px;
     z-index: 4;
     margin-top: -99px;
     border-top: 1px solid #e0e0e0;
@@ -268,7 +271,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -78px;
-    height: 252px;
   }
 
   &::after {

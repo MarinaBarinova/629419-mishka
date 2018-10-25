@@ -9,7 +9,7 @@
       width: 350px;
       position: absolute;
       left: 0;
-      height: 457px;
+      min-height: 457px;
       z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-left: 12px;
+    padding-left: 8px;
     margin-bottom: 101px;
   }
 
@@ -73,9 +73,10 @@
 .reviews__wrapper {
   @include container;
   padding: 0 30px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -95,7 +96,7 @@
       position: absolute;
       left: 0;
       top: 0;
-      height: 457px;
+      min-height: 457px;
       z-index: -1;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -208,8 +209,9 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 175px;
+    width: 170px;
     margin: 0;
+    margin-left: 2px;
     order: 5;
     padding-top: 31px;
     padding-right: 0;
@@ -226,8 +228,8 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
-    margin-top: 27px;
-    padding-left: 10px;
+    margin-top: 30px;
+    padding-left: 7px;
     padding-right: 2px;
     order: 2;
   }
@@ -250,8 +252,10 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
@@ -268,8 +272,10 @@
     opacity: 0.6;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {
