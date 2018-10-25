@@ -3,6 +3,7 @@
 @import "global/mixins.scss";
 @import "global/fonts";
 @import "global/scaffolding";
+@import "blocks/modal.scss";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/nav";
@@ -16,4 +17,3 @@
 @import "blocks/manufactured";
 @import "blocks/form";
 @import "blocks/catalog-item";
-@import "blocks/form-container.scss";

@@ -1,11 +1,24 @@
 .intro {
   @include container;
-  margin-top: 145px;
+  margin-top: 26px;
+  padding: 0 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-top: 53px;
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 0;
+  }
 }
 
 .intro__wrapper {
   @media (min-width: $desktop-width) {
-    @include index-content-margins;
+    margin-left: 178px;
   }
 }
 
@@ -13,31 +26,60 @@
   font-family: $font-family;
   font-size: 24px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 35px;
+  margin: 0;
+  margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-left: 2px;
     font-size: 43px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
+    padding-left: 0;
+    margin-bottom: 60px;
   }
 }
 
 .intro__list {
   @include list-style-reset;
 
+  padding-left: 1px;
+
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 500px;
+    height: 420px;
+    margin-bottom: 75px;
+    margin-top: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 69%;
+    height: 490px;
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+}
+
+.intro__item-title {
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    line-height: 21px;
   }
 }
 
 .intro__item {
   display: flex;
-  width: 200px;
+  width: 77%;
   flex-direction: column;
   color: #000000;
   font-weight: 700;
@@ -45,25 +87,164 @@
   font-size: 17px;
   line-height: 20px;
 
+  use {
+    fill: $accent-color;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    width: 235px;
+    width: 37%;
     font-size: 20px;
   }
-}
 
-.intro__item:first-child {
-  width: 175px;
-}
+  @media (min-width: $desktop-width) {
+    padding-left: 4px;
+    width: 39%;
+  }
 
-.intro__item:nth-child(4),
-.intro__item:nth-child(5) {
-  width: 250px;
+  &:first-child {
+    width: 75%;
+
+    @media (min-width: $tablet-width) {
+      width: 34%;
+    }
+  }
+
+  &:nth-child(n+4) {
+    width: 96%;
+
+    @media (min-width: $tablet-width) {
+      width: 45%;
+      padding-left: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 106px;
+      width: 51%;
+    }
+
+    .intro__item-title {
+      @media (min-width: $desktop-width) {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      width: 44%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 106px;
+      width: 50%;
+    }
+  }
 }
 
 .intro__img {
   align-self: flex-start;
-  padding-bottom: 28px;
-  padding-top: 30px;
+  padding-bottom: 18px;
+  padding-top: 28px;
+
+  @media (min-width: $desktop-width) {
+
+    padding-left: 10px;
+  }
+}
+
+.intro__img--flower {
+  padding-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-left: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-left: 10px;
+  }
+}
+
+.intro__img--heart {
+  padding-top: 34px;
+  padding-left: 8px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68px;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
+    padding-left: 8px;
+  }
+}
+
+.intro__img--money {
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 7px;
+    padding-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-bottom: 26px;
+  }
+}
+
+.intro__img--ball {
+  padding-left: 5px;
+  padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+    padding-bottom: 18px;
+    padding-top: 3px;
+  }
+}
+
+.intro__img--rocket {
+  padding-top: 32px;
+  padding-left: 0;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 64px;
+    padding-left: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 5px;
+    padding-bottom: 26px;
+    padding-top: 63px;
+  }
+}
+
+.intro__img--gift {
+  padding-top: 31px;
+  padding-left: 3px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-left: 11px;
+    padding-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+    padding-bottom: 21px;
+    padding-top: 61px;
+  }
 }

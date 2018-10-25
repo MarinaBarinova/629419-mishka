@@ -1,11 +1,18 @@
 .page-footer {
   padding: 25px 0;
   box-sizing: border-box;
-  height: 160px;
+  min-height: 160px;
   background-color: #f1f1f1;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0;
+    padding-top: 42px;
+    padding-left: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -22,6 +29,13 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    padding-right: 36px;
+    padding-top: 13px;
+    width: auto;
+  }
 }
 
 
@@ -36,13 +50,16 @@
 
 .page-footer__social {
   @include list-style-reset;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
+  width: 100%;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-
+    padding-top: 10px;
+    padding-left: 80px;
+    width: auto;
     padding-bottom: 0;
     border-bottom: 0;
   }
@@ -50,41 +67,60 @@
 
 .page-footer__social-link--fb {
   padding: 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .page-footer__social-link--fb,
 .page-footer__social-link--insta,
 .page-footer__social-link--twitter {
+  display: block;
+  box-sizing: border-box;
+
   &:hover {
     fill: #46c1ae;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
+    outline: none;
   }
+}
+
+.page-footer__social-link--insta,
+.page-footer__social-link--twitter {
+  padding-top: 5px;
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 0;
+    padding-top: 8px;
   }
 }
 
 .page-footer__copyright-logo {
   fill: $accent-color;
+  padding-top: 5px;
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     fill: #46c1ae;
+    outline: none;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
+    outline: none;
   }
 }
 
@@ -95,8 +131,10 @@
     fill: #46c1ae;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     opacity: 0.3;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {

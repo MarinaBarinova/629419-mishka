@@ -4,13 +4,12 @@
   font-weight: 600;
   font-family: $font-family;
   font-size: 16px;
-  line-height: 52px;
+  line-height: 50px;
+  letter-spacing: 0.5px;
   color: $text-color;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid $text-color;
-  width: 260px;
-  height: 52px;
 
 
   &:hover {
@@ -18,8 +17,10 @@
     color: $background-color;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background: $text-color;
     color: $active-color;
+    outline: none;
   }
 }
