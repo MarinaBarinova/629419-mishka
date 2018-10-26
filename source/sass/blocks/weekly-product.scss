@@ -40,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 12px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -213,7 +214,7 @@
   }
 }
 
-.weekly-products__picture {
+.weekly-product__picture {
   margin-top: 25px;
   padding-left: 2px;
   min-width: 260px;
