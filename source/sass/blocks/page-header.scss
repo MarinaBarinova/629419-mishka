@@ -299,9 +299,11 @@
 
 .page-header__block--form .page-header__title {
   padding-top: 69px;
+  padding-left: 4px;
 
   @media (min-width: $tablet-width) {
     padding-top: 93px;
+    padding-left: 15px;
   }
 
   @media (min-width: $desktop-width) {

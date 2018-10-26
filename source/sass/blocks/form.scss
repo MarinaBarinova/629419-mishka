@@ -25,7 +25,8 @@
   line-height: 24px;
 
   @include container;
-  padding: 0 30px;
+  padding-left: 32px;
+  padding-right: 30px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -48,6 +49,7 @@
   @include container;
   padding: 0 30px;
   box-sizing: border-box;
+  background-color: $background-color;
 
   @media (min-width: $tablet-width) {
     padding: 0 50px;
@@ -174,13 +176,15 @@
   content: "";
   position: absolute;
   right: 5px;
-  top: 33px;
+  top: 11px;
   bottom: 0;
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {
     right: 25px;
-    top: 23px;
+    top: 25px;
+    max-width: 35px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -256,7 +260,9 @@
 
 .form__filter input[type="radio"],
 .form__filter input[type="checkbox"] {
-  display: none;
+  margin-top: 5px;
+  width: 3px;
+  z-index: -1;
 }
 
 .form__filter--color {
@@ -298,13 +304,15 @@
 
   @media (min-width: $tablet-width) {
 
-    padding: 29px 0 17px 84px;
-    letter-spacing: 1.4px;
+    padding: 29px 0 17px 79px;
+    letter-spacing: 1.1px;
   }
 
   @media (min-width: $desktop-width) {
 
     padding-top: 29px;
+    padding-left: 57px;
+    letter-spacing: 1.1px;
   }
 }
 
@@ -327,12 +335,6 @@
 
   &:hover::before {
     border: 2px solid $accent-color;
-  }
-
-  &:active::before,
-  &:focus::before {
-    border: 2px solid #cacaca;
-    outline: none;
   }
 
   &::after {
@@ -359,12 +361,12 @@
   padding-top: 12px;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 0 0 84px;
+    padding: 17px 0 0 80px;
     line-height: auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
+    padding-left: 54px;
   }
 }
 
@@ -398,10 +400,12 @@
   display: block;
 }
 
+.form__control--checkable:active + label::before,
+.form__control--checkable:focus + label::before,
 .form__control--checkable:disabled + label::before {
   border: 2px solid #cacaca;
+  outline: none;
 }
-
 
 .form__contacts {
   display: flex;

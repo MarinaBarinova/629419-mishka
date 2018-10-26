@@ -73,6 +73,7 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 17px;
     box-sizing: border-box;
+    width: 100%;
   }
 
   svg {
@@ -92,6 +93,12 @@
 .nav__item--toys {
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   @media (min-width: $desktop-width) {
     &:hover,
     &:active,
@@ -110,6 +117,10 @@
         background-color: $accent-color;
       }
     }
+
+    svg {
+      padding-left: 62%;
+    }
   }
 }
 
@@ -127,6 +138,10 @@
     @media (min-width: $tablet-width) {
       padding-left: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 62%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -135,6 +150,12 @@
       &::before {
         background-color: #56c3b2;
       }
+    }
+  }
+
+  .nav__item-text {
+    @media (min-width: $tablet-width) {
+      max-width: 185px;
     }
   }
 }
@@ -146,11 +167,13 @@
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
+    padding-right: 0;
+    max-width: 220px;
   }
 
   @media (min-width: $desktop-width) {
 
-    padding-top: 25px;
+    padding-top: 15px;
     width: 30%;
   }
 }
